@@ -1,0 +1,19 @@
+# -------------------------
+# Configuation du serveur
+# -------------------------
+#NB : fichier de configuration à tester
+
+# Le serveur doit suivre les liens symboliques
+# Options +followSymlinks
+
+# Activation du module de réécriture d'URL
+RewriteEngine On
+# Réécriture des URL sans www.
+RewriteCond %{HTTP_HOST} !^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
+# Réécriture des URL sans https://
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://www.ensemblesyllepse.com/$1 [R=301,L]
+
+# Définition des pages d'erreur
+ErrorDocument 404 404.html
