@@ -1,0 +1,36 @@
+///*Sets of properties displaying a text block as a circle, given a radius*/
+//@mixin circle-box ($radius) {
+//	height: $radius;
+//	width: $radius;
+//	border-radius: calc($radius / 2);
+//	text-align: center;
+//	padding-top: calc(($radius / 2) - .6rem);
+//}
+//
+///*Sets of properties displaying a block as a stall over the element on top of it*/
+//@mixin up-rounded-stall ($radius) {
+//	position: relative;
+//	top: - $radius;
+//	border-top-left-radius: $radius;
+//	border-top-right-radius: $radius;
+//}
+//
+///*Sets of properties displaying "..." at the unique line's end if the text overflows*/
+//@mixin single-line-overflow {
+//	text-overflow: ellipsis;
+//	overflow: hidden;
+//	white-space: nowrap;
+//}
+//
+///*Media queries mixins for tablet and desktop display*/
+//@mixin on-tablet {
+//	@media (min-width: 768px) and (max-width: 992px) {
+//		@content;
+//	}
+//}
+//
+//@mixin on-desktop {
+//	@media (min-width: 992px) {
+//		@content;
+//	}
+//}

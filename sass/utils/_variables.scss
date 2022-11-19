@@ -1,0 +1,121 @@
+///*Defining variables used all over scss files. Regrouped by category*/
+///*Colors used*/
+//$color-primary: #9356DC;
+//$color-secondary: #FF79DA;
+//$color-tertiary: #99E2D0;
+//$color-default-visible: black;
+//$color-default-invisible: white;
+//$color-main-background: #F7F7F7;
+//$color-search-background: #EAEAEA;
+//$color-howto-icon: #7D7D7D;
+//$color-howto-hovered-background: #F5EDFF;
+//$color-footer-background: #343434;
+//$color-flag-new-text: #008868;
+//
+///*Fonts family and default size used. In the rest of project, mainly rem units will be used, based on these basic properties*/
+//$font-size-default: 14px;
+//$font-html: 'Roboto';
+//$font-titles: 'Shrikhand';
+//
+///*Loading spinner properties*/
+//$loading-spinner-duration: 2s;
+//$loading-spinner-loop-duration: 400ms;
+//$loading-spinner-size: 3rem;
+//
+///*Header properties*/
+//$header__logo-width: 165px;
+//$header__back-button-size: 1.4rem;
+//$header-padding: 1.3rem 1.5rem .8rem 1.5rem;
+//$header-box-shadow: 0 0 .3rem darken($color-search-background, 40%);
+//
+///*Components properties (button, heart, cards)*/
+//$button-radius: 1.9rem;
+//$button-text-size: 1.15rem;
+//$button-shadow: 0 .2rem .3rem .2rem darken($color-main-background, 10%);
+//$button-shadow--darken: 0 .2rem .3rem .2rem darken($color-main-background, 30%);
+//$heart-size: 2rem;
+//$heart-transition-duration: 200ms;
+//$heart-transition-delay: 0s;
+//$heart-transition-pattern: ease-out;
+//$card-box-shadow: 0 .3rem .4rem darken($color-main-background, 8%);
+//$dish-card-radius: 1.2rem;
+//$dish-card-height: 67px;
+//$dish-card-padding: (
+//	top:.8rem,
+//	right:1.6rem,
+//	bottom:.8rem,
+//	left:.8rem,
+//	title-details-gap:.25rem
+//);
+//$dish-card-title-size: 1.3rem;
+//$dish-card-title-extra-padding-right: 3rem;
+//$dish-card-complement-size: 1.05rem;
+//$dish-card-price-size: 1rem;
+//$dish-card-price-margin-left: 2rem;
+//$dish-card-transition-properties: 400ms 0s ease-out;
+//$dish-card-max-width-check: 5.5rem;
+//$dish-card-check-size: 2rem;
+//$dish-card-check-left-margin: 1.7rem;
+//
+///*Layout and pages properties*/
+//$explore-padding: 1rem 1rem 1rem 7.5rem;
+//$explore-text-size: 1.1rem;
+//$explore-logo-input-gap: 1rem;
+//$presentation-padding: 2.6rem 1rem 4.2rem 1rem;
+//$presentation-header-size: 1.8rem;
+//$presentation-header-padding: 0 2rem .9rem 2rem;
+//$presentation-text-size: 1.3rem;
+//$presentation-text-padding: 0 0 2.2rem 0;
+//$presentation-button-padding: 1.1rem 1.5rem;
+//$howto-use-padding: 3.2rem 0 3.1rem 0;
+//$howto-use-title-size: 1.7rem;
+//$howto-use-title-padding: 0 1rem 2.4rem 1.3rem;
+//$howto-use-number-size: 1.7rem;
+//$howto-use-number-margin-top: 1.9rem;
+//$howto-use-step-card-radius: 1.5rem;
+//$howto-use-step-card-shadow: 0 .2rem .7rem darken($color-main-background, 15%);
+//$howto-use-step-card-margin: 0 1.5rem 1.8rem 2.2rem;
+//$howto-use-step-card-padding: 2.2rem 1rem 1.8rem 2.4rem;
+//$howto-use-step-card-size: 1.15em;
+//$howto-use-icon-text-gap: 1.4rem;
+//$restaurants-padding: 4rem 1.5rem 4.5rem 1.5rem;
+//$restaurants-header-size: 1.8rem;
+//$restaurants-card-card-gap: 1.3rem;
+//$restaurants__card-height: 251px;
+//$restaurants__card-image-ratio: 69%;
+//$restaurants__card-radius: 1.1rem;
+//$restaurants__card--new-padding: .5rem 1rem;
+//$restaurants__card--new-margin: 1rem;
+//$restaurants__card--new-font-weight: 600;
+//$restaurants__card--new-border-radius: .2rem;
+//$restaurants__card__description-padding: .9rem 1rem .9rem 1rem;
+//$restaurants__card-title-size: 1.3rem;
+//$restaurants__card-title-bottom-margin: .3rem;
+//$restaurants__card-location-size: 1.15rem;
+//$restaurant-picture-height: 258px;
+//$menu-padding-bottom: 1.8rem;
+//$menu-stall-size: 3rem;
+//$menu-title-padding: 2.2rem 3rem 0 1.1rem;
+//$menu-title-size: 2rem;
+//$menu-category-offset: 1rem;
+//$menu-category-title-size: 1.15rem;
+//$menu-category-title-padding: 0 1rem 0 1rem;
+//$menu-category-title-underlying: (
+//	height: 3px,
+//	width: 40px,
+//	top-margin: .3rem
+//);
+//$menu-card-margin: .8rem .8rem 0 .8rem;
+//$menu-category-category-gap: 2.6rem;
+//$menu-button-padding: 1.1rem 3.5rem;
+//
+///*Footer properties*/
+//$footer__title-margin-bottom: 1.1rem;
+//$footer__title-font-size: 1.25rem;
+//$footer-font-size: 1.1rem;
+//$footer__icon--partner-stretch: scaleX(.7);
+//$footer__icon--restaurant-stretch: scaleX(1);
+//$footer__icon--partner-margin-right: .2rem;
+//$footer__icon--restaurant-margin-right: .6rem;
+//$footer-list-margin-bottom: .3rem;
+//$footer-padding: 1.5rem 1.5rem 2.3rem 1.5rem;

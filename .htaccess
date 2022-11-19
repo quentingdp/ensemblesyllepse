@@ -15,5 +15,15 @@ RewriteRule ^(.*)$ https://www.%{HTTP_HOST}/$1 [L,R=301]
 RewriteCond %{HTTPS} !=on
 RewriteRule ^(.*)$ https://www.ensemblesyllepse.com/$1 [R=301,L]
 
+#A tester : d'après internet, les lignes suivantes vont retirer les ".html" des URL
+#RewriteCond %{THE_REQUEST} \.html [NC]
+#RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+#
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME}\.html -f
+#RewriteRule ^(.*)$ $1.html [L]
+
+
 # Définition des pages d'erreur
 ErrorDocument 404 404.html
