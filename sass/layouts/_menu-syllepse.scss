@@ -1,0 +1,50 @@
+.menu-syllepse {
+	position: sticky;
+	top: 0px;
+	padding: 15px;
+	background-color: $couleur-presentation;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	max-width: 1440px;
+	margin: auto;
+
+	@include pour-tablette {
+		flex-direction: column;
+		position: unset;
+		top: unset;
+		height: unset;
+	}
+
+	@include pour-mobile {
+		flex-direction: column;
+		position: unset;
+		top: unset;
+		height: unset;
+	}
+}
+
+.menu-logo {
+	height: 100%;
+
+	@include pour-tablette {
+		height: 80px;
+		margin-bottom: 15px;
+	}
+
+	@include pour-mobile {
+		height: 80px;
+		margin-bottom: 15px;
+	}
+}
+
+.menu-navigation {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	&-option {
+		margin: 5px 20px;
+	}
+}

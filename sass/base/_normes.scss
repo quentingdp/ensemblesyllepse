@@ -1,0 +1,40 @@
+/*Propriétés génériques s'appliquant sur l'ensemble du site internet*/
+body,
+body * {
+	/*Quand les bordures existent, elles sont créés à l'intérieur des objets et non pas en dehors*/
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 16px;
+	font-family: 'Roboto';
+}
+
+li {
+	list-style-type: none;
+}
+
+a:hover {
+	color: $couleur-texte-actif;
+}
+
+a,
+a:active,
+a:visited {
+	color: $couleur-texte;
+	text-decoration: none;
+}
+
+input {
+	border: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+h1 {
+	font-size: 2rem;
+}

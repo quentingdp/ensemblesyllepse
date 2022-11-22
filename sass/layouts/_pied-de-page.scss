@@ -1,0 +1,54 @@
+.pied-de-page {
+	position: sticky;
+	bottom: 0px;
+	padding: 2px 15px;
+	background-color: $couleur-presentation;
+	max-width: 1440px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	@include pour-tablette {
+		position: unset;
+		bottom: unset;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	@include pour-mobile {
+		position: unset;
+		bottom: unset;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.reseaux-navigation {
+	display: flex;
+	align-items: center;
+
+	&-option {
+		width: 30px;
+		height: 30px;
+		border-radius: 10px;
+		overflow: hidden;
+		margin: 5px 10px;
+
+		img {
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.medias-navigation {
+	margin: 5px 30px;
+	font-size: .8rem;
+	display: flex;
+	align-items: center;
+
+	&-option {
+		margin: 0px 5px;
+	}
+}

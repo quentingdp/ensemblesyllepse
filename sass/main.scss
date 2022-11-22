@@ -1,9 +1,11 @@
 @import "utils/variables";
-@import "utils/functions";
+@import "utils/fonctions";
 @import "utils/mixins";
-@import "base/fonts";
-@import "base/norms";
+@import "base/polices";
+@import "base/normes";
 //@import "components/xxx";
-@import "layouts/header";
-@import "layouts/footer";
+@import "layouts/menu-syllepse";
+@import "layouts/corps";
+@import "layouts/pied-de-page";
+@import "layouts/presentation";
 //@import "pages/xxx";
