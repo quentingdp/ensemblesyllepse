@@ -1,24 +1,18 @@
 .pied-de-page {
-	position: sticky;
-	bottom: 0px;
 	padding: 2px 15px;
-	background-color: $couleur-presentation;
-	max-width: 1440px;
+	min-height: 5vh;
+	background-color: $couleur-base-navigation;
 	margin: auto;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 
 	@include pour-tablette {
-		position: unset;
-		bottom: unset;
 		flex-direction: column;
 		align-items: center;
 	}
 
 	@include pour-mobile {
-		position: unset;
-		bottom: unset;
 		flex-direction: column;
 		align-items: center;
 	}

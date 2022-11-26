@@ -1,50 +1,63 @@
-.menu-syllepse {
-	position: sticky;
-	top: 0px;
-	padding: 15px;
-	background-color: $couleur-presentation;
+.menu-accueil-syllepse {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	height: 100px;
-	max-width: 1440px;
-	margin: auto;
-
-	@include pour-tablette {
-		flex-direction: column;
-		position: unset;
-		top: unset;
-		height: unset;
-	}
-
-	@include pour-mobile {
-		flex-direction: column;
-		position: unset;
-		top: unset;
-		height: unset;
-	}
+	height: 90vh;
+	background-image: url("./../images/photos/Syllepse page d'accueil.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .menu-logo {
-	height: 100%;
-
-	@include pour-tablette {
-		height: 80px;
-		margin-bottom: 15px;
-	}
-
-	@include pour-mobile {
-		height: 80px;
-		margin-bottom: 15px;
-	}
+	height: 200px;
+	max-height: 80vh;
+	margin-top: 5vh;
 }
 
 .menu-navigation {
+	position: sticky;
+	top: 0px;
+	width: 100%;
+	min-height: 10vh;
+	background-color: $couleur-base-navigation;
+	color: $couleur-texte-navigation;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
+
+	&-list {
+		max-width: 2000px;
+		width: 95%;
+		display: flex;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+	}
 
 	&-option {
-		margin: 5px 20px;
+		margin: 5px 10px;
+		text-align: center;
+
+		@include pour-tablette {
+			width: 23%;
+		}
+
+		@include pour-mobile {
+			width: 42%;
+		}
+	}
+}
+
+.page-accueil {
+	font-weight: bold;
+	color: $couleur-accueil-navigation;
+
+	@include pour-tablette {
+		width: 100%;
+	}
+
+	@include pour-mobile {
+		width: 100%;
 	}
 }
