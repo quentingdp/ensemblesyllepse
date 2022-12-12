@@ -1,0 +1,31 @@
+.carte-de-visite {
+	height: 45vh;
+	width: 70%;
+	border: 2px solid $couleur-texte;
+	border-radius: 10px;
+	padding: 5px;
+	margin: 40px 0;
+	display: flex;
+	flex-direction: row;
+}
+
+.carte-image {
+	width: 30%;
+	object-fit: contain;
+}
+
+.carte-description {
+	width: 70%;
+	padding: 10px;
+	overflow: scroll;
+}
+
+.carte-nom {
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.carte-detail {
+	text-align: center;
+	margin-top: 10px;
+}
