@@ -1,15 +1,17 @@
-//Imports of external libraries
+//Import de librairies externes
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-//Internal dependancies
-import Temp from "./pages/Temp"
+//Dépendences internes
+import Accueil from "./pages/Accueil"
+import E404 from "./pages/E404"
 
-//Definition of the rooter. The currentPage state is defined here to be used in the Header : we underline the navigation link if we are in the corresponding route
+//Définitions des routes du site internet
 const Router = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="*" element={<Temp />} />
+                <Route path="/" element={<Accueil />} />
+                <Route path="*" element={<E404 />} />
             </Routes>
         </BrowserRouter>
     )

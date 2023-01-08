@@ -1,13 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Vidaloka&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&display=swap");
+
+/*Propriétés génériques s'appliquant sur l'ensemble du site internet*/
+body,
+body * {
+    /*Quand les bordures existent, elles sont créés à l'intérieur des objets et non pas en dehors*/
+    box-sizing: border-box;
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    padding: 0;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+html {
+    font-size: 16px;
+    font-family: "Cardo";
+    color: white;
+    background-color: black;
+}
+
+h1 {
+    font-family: "Vidaloka";
+    color: #e0c9aa;
+    font-size: 38.5px;
+    text-transform: uppercase;
+    font-weight: unset;
+    letter-spacing: 0.2em;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Vidaloka";
+    color: #e0c9aa;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: unset;
+    letter-spacing: 0.2em;
+}
+
+.sous-titre {
+    text-transform: uppercase;
+    font-size: 11px;
+    letter-spacing: 1em;
+}
+
+nav {
+    text-transform: uppercase;
+}
+
+li {
+    list-style-type: none;
+}
+
+a,
+a:active,
+a:visited {
+    color: unset;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+input {
+    border: none;
+}
+
+input:focus {
+    outline: none;
 }
