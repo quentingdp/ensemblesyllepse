@@ -3,6 +3,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 //Dépendences internes
 import Accueil from "./pages/Accueil"
+import Compositeurices from "./pages/a-propos/Compositeurices"
+import Association from "./pages/a-propos/Association"
+import Contributeureuses from "./pages/a-propos/Contributeureuses"
 import E404 from "./pages/E404"
 
 //Définitions des routes du site internet
@@ -11,6 +14,18 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Accueil />} />
+                <Route
+                    path="/a-propos/compositeurices/"
+                    element={<Compositeurices />}
+                />
+                <Route
+                    path="/a-propos/association/"
+                    element={<Association />}
+                />
+                <Route
+                    path="/a-propos/contributeureuses/"
+                    element={<Contributeureuses />}
+                />
                 <Route path="*" element={<E404 />} />
             </Routes>
         </BrowserRouter>
