@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 //Dépendences internes
 import Accueil from "./pages/Accueil"
+import OpheliaBesson from "./pages/a-propos/OpheliaBesson"
+import Chanteureuses from "./pages/a-propos/Chanteureuses"
 import Compositeurices from "./pages/a-propos/Compositeurices"
 import Association from "./pages/a-propos/Association"
 import Contributeureuses from "./pages/a-propos/Contributeureuses"
@@ -14,6 +16,14 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Accueil />} />
+                <Route
+                    path="/a-propos/ophelia-besson/"
+                    element={<OpheliaBesson />}
+                />
+                <Route
+                    path="/a-propos/chanteureuses/"
+                    element={<Chanteureuses />}
+                />
                 <Route
                     path="/a-propos/compositeurices/"
                     element={<Compositeurices />}

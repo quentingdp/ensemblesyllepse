@@ -1,7 +1,0 @@
-{
-	"scripts": {
-		"sass": "sass --watch sass/main.scss:css/style.css --style compressed --no-source-map",
-		"prefix": "postcss css/style.css --use autoprefixer -d css/prefixed/ --no-map"
-	},
-	"browserslist": "last 4 versions"
-}
