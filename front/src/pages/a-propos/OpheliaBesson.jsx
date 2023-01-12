@@ -15,12 +15,18 @@ const StyleNavigationReduit = styled.header`
 
 export const StyleOpheliaBesson = styled.main`
     padding: 15px;
-    max-width: 2000px;
+    max-width: 1440px;
     min-height: 89vh;
     margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
+
+    .sous-titre {
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 1em;
+    }
 
     img {
         width: 20%;

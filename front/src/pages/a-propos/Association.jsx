@@ -10,7 +10,6 @@ import PiedDePage from "../../components/PiedDePage"
 import photoBernardMirabel from "../../images/photos/Bernard_Mirabel.jpg"
 import photoYvesGosselin from "../../images/photos/Yves_Gosselin.jpg"
 import photoOlivierWalter from "../../images/photos/Olivier_Walter.jpg"
-import photoYvetteRouxel from "../../images/photos/Yvette_Rouxel.jpg"
 import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.png"
 
 const StyleNavigationReduit = styled.header`
@@ -20,7 +19,7 @@ const StyleNavigationReduit = styled.header`
 
 export const StyleAssociation = styled.main`
     padding: 15px;
-    max-width: 2000px;
+    max-width: 1440px;
     min-height: 89vh;
     margin: auto;
     display: flex;
@@ -61,13 +60,6 @@ export default function Association() {
                     nom="Olivier Walter"
                     biographie={[
                         "Professeur de mathématiques retraité, il a grandi dans une famille nombreuse modeste mais au sein de laquelle la musique et le partage étaient des valeurs vivantes. Il a été ainsi au contact du chant choral et de la musique des grands compositeurs, au premier plan desquels BACH. Il a découvert la guitare enfant, et c'est devenu une compagne au fil des ans. Il pratique également le chant dans un chœur lyonnais (ROMANTICO). Parallèlement à cela, il est depuis très longtemps passionné d'informatique (scientifique, musicale, artistique, sites web). Ce qui l'a amené à se pencher vers la prise de son qu'il pratique maintenant régulièrement, entre autres pour SYLLEPSE. Il est également grand amateur de photo de nature. Et il fut un alpiniste assidu, reconverti, l'âge l'imposant, à la via ferrata.",
-                    ]}
-                />
-                <Carte
-                    photo={photoYvetteRouxel}
-                    nom="Yvette Rouxel"
-                    biographie={[
-                        "Née à Lyon en 1942, mariée, elle a trois enfants, et 4 petits-enfants. Elle a été institutrice en école maternelle à Lyon, puis à Brignais où elle réside, directrice d'école les 5 dernières années de sa carrière. Choriste à Brignais depuis 2012 dans le chœur « Le Tourdion », dont elle a été présidente de 2014 à 2017, elle a connu et apprécié Ophélia lors de la direction de son chœur de 2017 à 2019.",
                     ]}
                 />
                 <Carte

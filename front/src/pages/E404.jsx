@@ -14,8 +14,9 @@ const StyleNavigationReduit = styled.header`
 
 export const StyleE404 = styled.main`
     padding: 15px;
-    max-width: 2000px;
+    max-width: 1440px;
     min-height: 89vh;
+    margin: auto;
     text-align: center;
 
     h1 {

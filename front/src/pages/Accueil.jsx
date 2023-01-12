@@ -7,9 +7,15 @@ import { Helmet } from "react-helmet"
 import PiedDePage from "../components/PiedDePage"
 import Navigation from "../components/Navigation"
 import logoSyllepse from "../images/logo/LogoSyllepseEnsembleVocal_blanc.png"
-import photoPageAccueil from "../images/photos/Syllepse-page-d-accueil.jpg"
-import photoPresentationSyllepse from "../images/photos/photo-presentation-syllepse.jpg"
-import photoDescriptionQuestSyllepse from "../images/photos/photo-description-qu-est-ce-qu-est-syllepse.jpg"
+import photoPageAccueil from "../images/photos/IMG-20220419-WA0004.jpg"
+import photoDescriptionQuestSyllepse from "../images/photos/DSCF1280.jpg"
+import logoCreditMutuel from "../images/logo/logo-part-credit-mutuel-enseignant.png"
+import logoSaintFons from "../images/logo/logo-part-saint-fons.png"
+import logoPassCulture from "../images/logo/logo-part-pass-culture.png"
+import logoPrefetAura from "../images/logo/logo-part-prefet-aura.png"
+import logoCentreDeLaVoix from "../images/logo/logo-part-centre-de-la-voix.png"
+import logoSacem from "../images/logo/logo-part-sacem.png"
+import logoFondationCestVousLavenir from "../images/logo/logo-part-fondation-cest-vous-lavenir.png"
 
 const StyleEnteteAccueil = styled.header`
     display: flex;
@@ -31,25 +37,14 @@ const StyleEnteteAccueil = styled.header`
 
 export const StyleAccueil = styled.main`
     padding: 15px;
-    max-width: 2000px;
+    max-width: 1440px;
     min-height: 89vh;
     margin: auto;
 
-    .presentation-avec-photo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 30px 0px;
-
-        &-image {
-            width: 100%;
-            object-fit: cover;
-            margin: 15px 0px;
-        }
-
-        &-description {
-            padding: 0px 20px;
-        }
+    .sous-titre {
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: 1em;
     }
 
     .presentation-texte {
@@ -61,39 +56,28 @@ export const StyleAccueil = styled.main`
 
         &-description {
             margin: 15px 0px;
+            text-align: center;
         }
+    }
 
-        &-deux-colonnes {
-            margin: 20px 0px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
+    .deux-colonnes {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
-            @include pour-mobile {
-                flex-direction: column;
-            }
-        }
-
-        &-colonne-description {
-            width: 55%;
+        &-description {
+            width: 50%;
 
             p {
                 margin-top: 5px;
                 margin-bottom: 20px;
             }
-
-            @include pour-mobile {
-                width: 100%;
-            }
         }
 
-        &-colonne-visuel {
-            width: 35%;
-
-            @include pour-mobile {
-                width: 100%;
-            }
+        &-visuel {
+            width: 45%;
 
             img {
                 width: 100%;
@@ -102,29 +86,28 @@ export const StyleAccueil = styled.main`
         }
     }
 
-    .presentation-cartes {
+    .gallerie-logos {
         display: flex;
-        flex-direction: column;
+        justify-content: space-evenly;
         align-items: center;
+        flex-wrap: wrap;
+        * {
+            margin: 20px 30px;
+            height: 80px;
+        }
     }
 
-    .presentation-portrait {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    @media (max-width: 768px) {
+        .deux-colonnes {
+            flex-direction: column;
 
-        img {
-            width: 20%;
-        }
+            &-description {
+                width: 100%;
+            }
 
-        article {
-            width: 80%;
-            text-align: center;
-            padding: 0 200px;
-        }
-
-        .presentation-description {
-            margin: 20px 0;
+            &-visuel {
+                width: 100%;
+            }
         }
     }
 `
@@ -147,79 +130,144 @@ export default function Accueil() {
                         content="Page de présentation de l'Ensemble Syllepse, un jeune chœur mixte a cappella lyonnais constitué de chanteurs aguerris et regroupés autour de la cheffe Ophélia Besson."
                     />
                 </Helmet>
-                <article className="presentation-avec-photo">
-                    <h1 className="presentation-avec-photo-titre">Syllepse</h1>
-                    <img
-                        className="presentation-avec-photo-image"
-                        src={photoPresentationSyllepse}
-                        alt="Présentation de l'Ensemble Syllepse"
-                    />
-                    <p className="presentation-avec-photo-description">
-                        Syllepse est un jeune ensemble vocal lyonnais constitué
-                        de 30 chanteurs aguerris, regroupés autour de la cheffe
-                        Ophélia Besson. Chœur mixte a cappella, il fait le pari
-                        d'associer musiques anciennes et contemporaines à
-                        destination d'un large public. Réuni pour la première
-                        fois en 2020 pour un programme Shakespearien, le chœur
-                        Syllepse fait résonner la musique d'antan et celle
-                        d'aujourd'hui. Le plaisir, la beauté alliés à l'exigence
-                        sont les lignes de force de l'ensemble vocal Syllepse.
-                        L'ensemble vocal est géré par une association d'intérêt
-                        général de promotion culturelle du même nom (voir
-                        l'onglet « nous soutenir »)
+                <div className="presentation-texte">
+                    <h1>Syllepse</h1>
+                    <p className="sous-titre">
+                        "prendre ensemble, comprendre, embrasser"
                     </p>
-                </article>
+                </div>
                 <article className="presentation-texte">
-                    <h2 className="presentation-texte-titre">Signification</h2>
+                    <h2>Une identité forte</h2>
                     <p className="presentation-texte-description">
-                        Syllepse, qui nous vient du grec ancien : σύλληψις, qui
-                        signifie littéralement : « action de prendre ensemble,
-                        de comprendre, d'embrasser ».
+                        Créé par Ophélia Besson à Lyon au printemps 2020,
+                        Syllepse est un ensemble vocal a cappella à géométrie
+                        variable composé de 30 jeunes choristes originaires de
+                        toute la France. Il fait le pari d'associer musiques
+                        anciennes et contemporaines à destination d'un large
+                        public. Chaque projet est unique dans sa formation
+                        allant du un par voix au grand choeur.
                     </p>
-                    <ul className="presentation-texte-deux-colonnes">
-                        <li className="presentation-texte-colonne-description">
-                            <ul>
-                                <li>
-                                    <h3>Prendre ensemble</h3>
-                                    <p>
-                                        Un chœur c'est avant tout une multitude
-                                        d'individus qui s'unissent et qui
-                                        s'emparent d'un projet artistique. C'est
-                                        trouver une unité dans la diversité.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h3>Comprendre</h3>
-                                    <p>
-                                        Sans cesse chercher à comprendre.
-                                        Comprendre un son, comprendre une
-                                        résonance, un phénomène acoustique.
-                                        Comprendre ce qui relie deux époques
-                                        opposées dans l'histoire de la musique.
-                                        Chercher à comprendre ce qui nous anime,
-                                        ce qui nous unit. Comprendre ce langage
-                                        universel qu'est la musique.
-                                    </p>
-                                </li>
-                                <li>
-                                    <h3>Embrasser</h3>
-                                    <p>
-                                        Embrasser un répertoire, un même désir,
-                                        une exigence commune, pour s'élever
-                                        ensemble. Adopter et choisir une musique
-                                        pour la partager avec le public.
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li className="presentation-texte-colonne-visuel">
-                            <img
-                                src={photoDescriptionQuestSyllepse}
-                                alt="Concert de Syllepse"
-                            />
-                        </li>
-                    </ul>
+                    <p className="presentation-texte-description">
+                        Ce temps arrêté de confinement a permis au projet de
+                        s'imaginer. C'est un ensemble collaboratif qui a fédéré
+                        et rassemblé de jeunes artistes en quête de sens voulant
+                        se professionnaliser.
+                    </p>
+                    <p className="presentation-texte-description">
+                        Depuis son origine, le chœur s'inscrit dans une vision
+                        moderne de l'art choral et cherche de nouveaux rapports
+                        entre la scène, le public et les artistes, notamment
+                        avec un travail de mise en scène et de fusion des arts.
+                        Chaque choriste contribue au développement artistique et
+                        créatif de l'ensemble. La place de la cheffe est
+                        plurielle et ne tient pas nécessairement un rôle
+                        central, ni frontal.
+                    </p>
+                    <p className="presentation-texte-description">
+                        L'humain est au cœur du projet.
+                    </p>
                 </article>
+                <div className="deux-colonnes">
+                    <article className="deux-colonnes-description">
+                        <ul>
+                            <li>
+                                <h3>Prendre ensemble</h3>
+                                <p>
+                                    Un chœur c'est avant tout une multitude
+                                    d'individus qui s'unissent et qui s'emparent
+                                    d'un projet artistique. C'est trouver une
+                                    unité dans la diversité.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Comprendre</h3>
+                                <p>
+                                    Sans cesse chercher à comprendre. Comprendre
+                                    un son, comprendre une résonance, un
+                                    phénomène acoustique. Comprendre ce qui
+                                    relie deux époques opposées dans l'histoire
+                                    de la musique. Chercher à comprendre ce qui
+                                    nous anime, ce qui nous unit. Comprendre ce
+                                    langage universel qu'est la musique.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Embrasser</h3>
+                                <p>
+                                    Embrasser un répertoire, un même désir, une
+                                    exigence commune, pour s'élever ensemble.
+                                    Adopter et choisir une musique pour la
+                                    partager avec le public.
+                                </p>
+                            </li>
+                        </ul>
+                    </article>
+                    <div className="deux-colonnes-visuel">
+                        <img
+                            src={photoDescriptionQuestSyllepse}
+                            alt="Concert de Syllepse"
+                        />
+                    </div>
+                </div>
+                <article className="presentation-texte">
+                    <h2>Le talent au service de l'ambition</h2>
+                    <p className="presentation-texte-description">
+                        Ensemble vocal à visée internationale, moderne et
+                        coopératif, Syllepse connait en moins de 2 ans une
+                        rapide ascension avec déjà à son actif : 4 créations de
+                        spectacles, plus de 40 concerts et des productions dans
+                        5 festivals.
+                    </p>
+                    <p className="presentation-texte-description">
+                        L'ensemble a édité un EP : Shakespeare's Songs ainsi
+                        qu'un album : Nuits - Conte musical (Livre-CD). Suite à
+                        son succès au Festival International du Florilège Vocal
+                        de Tours en Juin 2022, Syllepse a reçu plusieurs
+                        invitations de festivals (Vaison-la-Romaine, FestyVocal
+                        - Firminy, etc.).
+                    </p>
+                    <p className="presentation-texte-description">
+                        Afin de porter au plus haut l'exigence musicale et
+                        artistique, Ophélia Besson invite à chaque projet des
+                        personnalités reconnues : chefs de chœur (Lionel Sow,
+                        Christophe Grapperon, Régine Théodoresco), metteur en
+                        scène (Jean Lacornerie), poète (Jean-A. Massard),
+                        comédiens, danseurs. Syllepse s'entoure de compositeurs
+                        contemporains (Emmanuelle Da Costa, Ritz Rakotomalala,
+                        Eric Lebrun, Filipe Rodriguez) en passant des commandes
+                        et facilite l'essor d'œuvres originales.
+                    </p>
+                    <p className="presentation-texte-description">
+                        Commandé par Syllepse auprès du compositeur Nans de
+                        Jésus, le cycle Fureur et mystère a été créé en novembre
+                        2022, lors des concerts “Chants et Poésies”,
+                        subventionnés par la DRAC Auvergne-Rhône-Alpes.
+                    </p>
+                </article>
+                <div className="presentation-texte">
+                    <h2>Partenaires</h2>
+                    <div className="gallerie-logos">
+                        <img
+                            src={logoCreditMutuel}
+                            alt="Crédit Mutuel Enseignant"
+                        />
+                        <img src={logoSaintFons} alt="Ville de Saint-Fons" />
+                        <img src={logoPassCulture} alt="Pass Culture" />
+                        <img
+                            src={logoPrefetAura}
+                            alt="Prefet de la région Auvergne-Rhône-Alpes"
+                        />
+                        <img
+                            src={logoCentreDeLaVoix}
+                            alt="Centre de la voix Rhône-Alpes"
+                        />
+                        <img src={logoSacem} alt="Sacem" />
+                        <img
+                            src={logoFondationCestVousLavenir}
+                            alt="Fondation C'est vous l'avenir"
+                        />
+                    </div>
+                </div>
             </StyleAccueil>
             <PiedDePage />
         </React.Fragment>

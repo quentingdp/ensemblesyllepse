@@ -90,27 +90,22 @@ export default function Navigation() {
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/chanteureuses/">
-                                Les chanteureuses
-                            </a>
+                            <a href="/a-propos/choristes/">Les choristes</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/compositeurices/">
-                                Les compositeurices
+                            <a href="/a-propos/compositeurs/">
+                                Les compositeurs
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
                             <a href="/a-propos/association/">L'association</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/contributeureuses/">
-                                Les contributeureuses
+                            <a href="/a-propos/contributeurs/">
+                                Les contributeurs
                             </a>
                         </li>
                     </ul>
-                </li>
-                <li className="menu-navigation-option">
-                    <a href="/pages/agenda.html">Agenda</a>
                 </li>
                 <li className="menu-navigation-option wrap">
                     <span className="menu-navigation-wrap-title">
@@ -128,8 +123,28 @@ export default function Navigation() {
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
+                            <a href="/pages/programmes/2022-nuits.html">
+                                Entrelacs
+                            </a>
+                        </li>
+                        <li className="menu-navigation-wrap-option">
+                            <a href="/pages/programmes/2022-nuits.html">
+                                Chants et Poésies
+                            </a>
+                        </li>
+                        <li className="menu-navigation-wrap-option">
                             <a href="/pages/programmes/2023-ombres.html">
                                 Ombres
+                            </a>
+                        </li>
+                        <li className="menu-navigation-wrap-option">
+                            <a href="/pages/programmes/2022-nuits.html">
+                                Miroir
+                            </a>
+                        </li>
+                        <li className="menu-navigation-wrap-option">
+                            <a href="/pages/programmes/2022-nuits.html">
+                                Kaléidoscope
                             </a>
                         </li>
                     </ul>
@@ -138,15 +153,7 @@ export default function Navigation() {
                     <span className="menu-navigation-wrap-title">Médias</span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/medias/photos.html">Nos photos</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/pages/medias/videos.html">Nos vidéos</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/pages/medias/medias.html">
-                                Dans la presse
-                            </a>
+                            <a href="/">Nous écouter</a>
                         </li>
                     </ul>
                 </li>
@@ -154,14 +161,7 @@ export default function Navigation() {
                     <span className="menu-navigation-wrap-title">Contact</span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/contact/soutien.html">
-                                Nous soutenir
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/pages/contact/contact.html">
-                                Nous contacter
-                            </a>
+                            <a href="/contact/nous-soutenir/">Nous soutenir</a>
                         </li>
                     </ul>
                 </li>
