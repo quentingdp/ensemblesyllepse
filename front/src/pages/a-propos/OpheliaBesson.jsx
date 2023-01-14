@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
-import photoDirectionOphelia from "../../images/photos/Ophelia_direction.png"
+import photoOphelia from "../../images/photos/DSCF1169.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -19,8 +19,17 @@ export const StyleOpheliaBesson = styled.main`
     min-height: 89vh;
     margin: auto;
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    align-items: start;
+    text-align: center;
+    background-image: url(${photoOphelia});
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .titre {
+        align-self: center;
+    }
 
     .sous-titre {
         text-transform: uppercase;
@@ -28,14 +37,10 @@ export const StyleOpheliaBesson = styled.main`
         letter-spacing: 1em;
     }
 
-    img {
-        width: 20%;
-    }
-
     article {
-        width: 80%;
-        text-align: center;
-        padding: 0 200px;
+        margin-top: 110px;
+        margin-bottom: 10px;
+        width: 45%;
     }
 
     .presentation-description {
@@ -56,13 +61,11 @@ export default function OpheliaBesson() {
                         content="A propos de l'Ensemble Syllepse, présentons Ophélia Besson, la cheffe de coeur et directrice artistique de l'ensemble."
                     />
                 </Helmet>
-                <img
-                    src={photoDirectionOphelia}
-                    alt="Direction d'Ophélia Besson"
-                />
-                <article>
+                <div className="titre">
                     <h1>Ophélia Besson</h1>
                     <p className="sous-titre">Direction artistique</p>
+                </div>
+                <article>
                     <p className="presentation-description">
                         Ophélia Besson, directrice artistique et cheffe de chœur
                         de l'Ensemble Vocal Syllepse, est étudiante au CNSMD de
@@ -84,6 +87,51 @@ export default function OpheliaBesson() {
                         Robert Ingari, Leslie Peeters, Bernard Têtu… Elle a été
                         chanteuse et cheffe assistante de Mikrokosmos, dirigé
                         par Loïc Pierre.
+                    </p>
+                    <p className="presentation-description">
+                        Cheffe déterminée, solaire, enjouée et chaleureuse,
+                        cette déclaration d'Ophélia définit bien son action et
+                        son idéal :
+                    </p>
+                    <p className="presentation-description">
+                        « L'émotion, l'enthousiasme et la magie du spectacle
+                        m'animent depuis toujours. Je suis convaincue que la
+                        joie nous donne une force collective pour parvenir à une
+                        exigence musicale, artistique et humaine. Voici ma quête
+                        constante : allier exigence, plaisir, et partage ! »
+                    </p>
+                </article>
+                <article>
+                    <h2>« Syllepse est un ensemble vocal collaboratif »</h2>
+                    <p className="presentation-description">
+                        Ophélia Besson fonde en 2020 l'Ensemble Vocal Syllepse
+                        qui reflète le dynamisme et l'originalité de la jeune
+                        cheffe. Son ambition est de faire rayonner l'art choral
+                        avec son ensemble dans le paysage culturel régional,
+                        puis, à terme au plan national et international, en le
+                        diffusant auprès de tous les publics.
+                    </p>
+                    <p className="presentation-description">
+                        Par son travail et son implication inlassables, elle a
+                        été sélectionnée parmi plus de 50 candidats et a
+                        participé au stage de direction de chœur avec l'Ensemble
+                        AEDES auprès de Mathieu Romano et Grete Pedersen (Abbaye
+                        de Reigny, lors des rencontres musicales de Vézelay en
+                        août 2021).
+                    </p>
+                    <p className="presentation-description">
+                        Remarquée lors du Florilège Vocal de Tours 2022, Ophélia
+                        est invitée à collaborer avec Roland Hayrabedian à
+                        Musicatreize. Elle est également invitée par Simon Kim
+                        Phipps pour diriger le Svenska Kammarkören en Suède à
+                        l'automne 2023.
+                    </p>
+                    <p className="presentation-description">
+                        Au cours de la saison 2023, Ophélia a été retenue par
+                        les Centres Nationaux d'Art Vocal pour participer à
+                        l'académie itinérante de direction de Choeur auprès de
+                        Musicatreize, Spirito, Les Éléments, Accentus et le
+                        Jeune Choeur de Paris.
                     </p>
                 </article>
             </StyleOpheliaBesson>

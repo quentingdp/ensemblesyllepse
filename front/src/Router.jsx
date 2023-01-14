@@ -8,6 +8,7 @@ import Choristes from "./pages/a-propos/Choristes"
 import Compositeurs from "./pages/a-propos/Compositeurs"
 import Association from "./pages/a-propos/Association"
 import Contributeurs from "./pages/a-propos/Contributeurs"
+import ChantsEtPoesies from "./pages/programmes/ChantsEtPoesies"
 import Soutien from "./pages/contact/Soutien"
 import E404 from "./pages/E404"
 
@@ -33,6 +34,10 @@ const Router = () => {
                 <Route
                     path="/a-propos/contributeurs/"
                     element={<Contributeurs />}
+                />
+                <Route
+                    path="/programmes/2022-chants-et-poesies/"
+                    element={<ChantsEtPoesies />}
                 />
                 <Route path="/contact/nous-soutenir/" element={<Soutien />} />
                 <Route path="*" element={<E404 />} />

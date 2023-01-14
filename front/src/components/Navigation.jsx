@@ -128,8 +128,8 @@ export default function Navigation() {
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2022-nuits.html">
-                                Chants et Poésies
+                            <a href="/programmes/2022-chants-et-poesies/">
+                                Chants et poésies
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
@@ -153,7 +153,7 @@ export default function Navigation() {
                     <span className="menu-navigation-wrap-title">Médias</span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
-                            <a href="/">Nous écouter</a>
+                            <a href="/fd">Nous écouter</a>
                         </li>
                     </ul>
                 </li>
