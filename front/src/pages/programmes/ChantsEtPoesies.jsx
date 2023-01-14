@@ -6,63 +6,113 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
+import Programme from "../../layouts/Programme"
+import photoConcert from "../../images/photos/DSCF1280.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
     top: 0px;
 `
 
-export const StyleChantsEtPoesies = styled.main`
-    padding: 15px;
-    max-width: 1440px;
-    min-height: 89vh;
-    margin: auto;
-    text-align: center;
+const progChantsEtPoesies = [
+    {
+        oeuvres: [
+            {
+                titre: "Le Choix de Pandore",
+                soliste: "Trombone : Sebastien Goulot-Martin",
+                auteur: "Nans de Jésus (1990-)",
+                info: "Commandé par Syllepse - Création mondiale",
+            },
+        ],
+    },
+    {
+        titre: "Trois poèmes de Paul Valéry",
+        auteur: "Jean Françaix (1912-1997)",
+        oeuvres: [
+            {
+                titre: "I. Aurore",
+            },
+            {
+                titre: "II. Cantique des Colonnes",
+            },
+            {
+                titre: "III. Le Sylphe",
+            },
+        ],
+    },
+    {
+        titre: "Le Cantique des Cantiques",
+        auteur: "Daniel-Lesur (1908-2002)",
+        oeuvres: [
+            {
+                titre: "I. Dialogue",
+            },
+            {
+                titre: "III. Le songe",
+            },
+        ],
+    },
+    {
+        titre: "Sept Chansons",
+        auteur: "Francis Poulenc (1899-1963)",
+        oeuvres: [
+            {
+                titre: "II. À peine défigurée",
+            },
+            {
+                titre: "V. Belle et ressemblante",
+            },
+            {
+                titre: "VI. Marie",
+            },
+        ],
+    },
+    {
+        titre: "Fureur et Mystère",
+        auteur: "Nans de Jésus (1990-), sur des poèmes de René Char",
+        info: "Commandé par Syllepse - Création mondiale",
+        oeuvres: [
+            {
+                titre: "I. Venez à nous",
+            },
+            {
+                titre: "II. Le requin et la mouette",
+                soliste: "(Alto solo : Zoé Cassard)",
+            },
+            {
+                titre: "III. Amer avenir",
+            },
+            {
+                titre: "IV. Assez creusé",
+            },
+        ],
+    },
+]
 
-    .sous-titre {
-        text-transform: uppercase;
-        font-size: 11px;
-        letter-spacing: 1em;
-    }
-
-    .presentation-description {
-        margin: 20px 0;
-    }
-`
 export default function ChantsEtPoesies() {
     return (
         <React.Fragment>
             <StyleNavigationReduit>
                 <Navigation />
             </StyleNavigationReduit>
-            <StyleChantsEtPoesies>
-                <Helmet>
-                    <title>Ensemble Syllepse - Chants et poésies</title>
-                    <meta
-                        name="description"
-                        content="Programme Chants et Poésies créé par l'Ensemble Syllepse"
-                    />
-                </Helmet>
-                <h1>Chants et poésies</h1>
-                <p className="sous-titre">2022</p>
-                <p className="presentation-description">
-                    Syllepse s'est rendu à Lamure-sur-Azergues, village rural de
-                    1000 habitants, en lien avec le Quartier Métisseur et le
-                    compositeur Nans de Jésus pour créer son spectacle Chants et
-                    poésies. Son programme autour des poètes français (René
-                    Char, Guillaume Apollinaire, Paul Éluard…) a été présenté au
-                    côté des œuvres de la plasticienne Céline Thoué et
-                    d'artisans locaux.
-                </p>
-                <p className="presentation-description">
-                    Des ateliers de chant choral ont été proposés en libre accès
-                    aux habitants. L'objectif était double : monter un projet
-                    ambitieux, celui d'un répertoire vocal de qualité et tisser
-                    du lien artistique et social en milieu rural.
-                </p>
-                <h2>Programme</h2>
-                <p>Morceau de programme</p>
-            </StyleChantsEtPoesies>
+            <Helmet>
+                <title>Ensemble Syllepse - Chants et poésies</title>
+                <meta
+                    name="description"
+                    content="Programme Chants et Poésies créé par l'Ensemble Syllepse"
+                />
+            </Helmet>
+            <Programme
+                titre="Chants et poésies"
+                annee="2022"
+                introduction={[
+                    "Syllepse s'est rendu à Lamure-sur-Azergues, village rural de 1000 habitants, en lien avec le Quartier Métisseur et le compositeur Nans de Jésus pour créer son spectacle Chants et poésies. Son programme autour des poètes français (René Char, Guillaume Apollinaire, Paul Éluard…) a été présenté au côté des œuvres de la plasticienne Céline Thoué et d'artisans locaux.",
+                    "Des ateliers de chant choral ont été proposés en libre accès aux habitants. L'objectif était double : monter un projet ambitieux, celui d'un répertoire vocal de qualité et tisser du lien artistique et social en milieu rural.",
+                ]}
+                programme={progChantsEtPoesies}
+                image={photoConcert}
+                alt="Concert à la salle Molière à Lyon"
+            />
             <PiedDePage />
         </React.Fragment>
     )

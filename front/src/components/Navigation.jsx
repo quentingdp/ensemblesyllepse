@@ -113,7 +113,7 @@ export default function Navigation() {
                     </span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2021-shakespeare-s-songs.html">
+                            <a href="/programmes/2021-shakespeare-s-songs/">
                                 Shakespeare's songs
                             </a>
                         </li>
