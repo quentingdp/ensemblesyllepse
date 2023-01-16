@@ -111,7 +111,7 @@ export default function ShakespearesSongs() {
                 ]}
                 programme={progShakespearesSongs}
                 image={photoConcert}
-                alt="Concert à la salle Molière à Lyon"
+                alt="Concert Shakespeare's songs"
             />
             <PiedDePage />
         </React.Fragment>

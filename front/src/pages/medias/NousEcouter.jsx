@@ -1,5 +1,6 @@
 //Import de librairies externes
 import React from "react"
+import ReactPlayer from "react-player"
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
@@ -46,6 +47,33 @@ export const StyleNousEcouter = styled.main`
         margin: 20px;
         height: 50px;
     }
+
+    h2 {
+        margin: 40px 0 15px 0;
+        font-size: 43px;
+    }
+
+    .youtube-encapsule {
+        display: flex;
+        justify-content: center;
+        height: 666px;
+        width: 1000px;
+        margin: auto;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        .youtube-encapsule {
+            height: 400px;
+            width: 600px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .youtube-encapsule {
+            height: 200px;
+            width: 300px;
+        }
+    }
 `
 
 export default function NousEcouter() {
@@ -82,7 +110,7 @@ export default function NousEcouter() {
                         </a>
                     </li>
                     <li>
-                        <a href="/error">
+                        <a href="https://music.apple.com/fr/artist/ensemble-vocal-syllepse/1625294903">
                             <img src={logoAppleMusic} alt="Apple Music" />
                         </a>
                     </li>
@@ -92,11 +120,19 @@ export default function NousEcouter() {
                         </a>
                     </li>
                     <li>
-                        <a href="/error">
+                        <a href="https://www.deezer.com/fr/artist/170717337">
                             <img src={logoDeezer} alt="Deezer" />
                         </a>
                     </li>
                 </ul>
+                <h2>Teaser</h2>
+                <div className="youtube-encapsule">
+                    <ReactPlayer
+                        width="100%"
+                        height="100%"
+                        url="https://youtu.be/53pSVlkeBfM"
+                    />
+                </div>
             </StyleNousEcouter>
             <PiedDePage />
         </React.Fragment>

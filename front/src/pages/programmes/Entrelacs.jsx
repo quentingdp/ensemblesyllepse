@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
-import photoConcert from "../../images/photos/DSCF1280.jpg"
+import photoConcert from "../../images/photos/entrelacs.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -114,7 +114,7 @@ export default function Entrelacs() {
                 ]}
                 programme={progEntrelacs}
                 image={photoConcert}
-                alt="Concert à la salle Molière à Lyon"
+                alt="Concert Entrelacs à Tours"
             />
             <PiedDePage />
         </React.Fragment>

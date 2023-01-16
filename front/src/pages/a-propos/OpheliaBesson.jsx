@@ -29,6 +29,8 @@ export const StyleOpheliaBesson = styled.main`
 
     .titre {
         align-self: center;
+        margin-top: 30px;
+        margin-bottom: 100px;
     }
 
     .sous-titre {
@@ -38,9 +40,13 @@ export const StyleOpheliaBesson = styled.main`
     }
 
     article {
-        margin-top: 110px;
-        margin-bottom: 10px;
+        margin-top: 10px;
+        margin-bottom: 30px;
         width: 45%;
+    }
+
+    h2 {
+        margin-bottom: 50px;
     }
 
     .presentation-description {
@@ -98,7 +104,7 @@ export default function OpheliaBesson() {
                         m'animent depuis toujours. Je suis convaincue que la
                         joie nous donne une force collective pour parvenir à une
                         exigence musicale, artistique et humaine. Voici ma quête
-                        constante : allier exigence, plaisir, et partage ! »
+                        constante : allier exigence, plaisir, et partage! »
                     </p>
                 </article>
                 <article>

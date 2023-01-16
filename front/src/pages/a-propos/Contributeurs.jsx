@@ -59,7 +59,7 @@ export default function Contributeurs() {
                 </h2>
                 <Carte
                     photo={photoBenoitMorros}
-                    nom="Benoît Morros"
+                    nom="Benoit Morros"
                     biographie={["Benoit MORROS, Photos et prises de sons"]}
                 />
                 <h2>Création des visuels pour les concerts</h2>

@@ -155,6 +155,11 @@ export default function Navigation() {
                         <li className="menu-navigation-wrap-option">
                             <a href="/contact/nous-soutenir/">Nous soutenir</a>
                         </li>
+                        <li className="menu-navigation-wrap-option">
+                            <a href="/contact/nous-contacter/">
+                                Nous contacter
+                            </a>
+                        </li>
                     </ul>
                 </li>
             </ul>

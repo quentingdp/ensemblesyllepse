@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
-import photoConcert from "../../images/photos/DSCF1280.jpg"
+import photoConcert from "../../images/photos/Ombres.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -132,7 +132,7 @@ export default function Ombres() {
                 ]}
                 programme={progOmbres}
                 image={photoConcert}
-                alt="Concert à la salle Molière à Lyon"
+                alt="Programme Ombres"
             />
             <PiedDePage />
         </React.Fragment>

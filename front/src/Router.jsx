@@ -17,6 +17,7 @@ import Miroir from "./pages/programmes/Miroir"
 import Kaleidoscope from "./pages/programmes/Kaleidoscope"
 import NousEcouter from "./pages/medias/NousEcouter"
 import Soutien from "./pages/contact/Soutien"
+import Contact from "./pages/contact/Contact"
 import E404 from "./pages/E404"
 
 //Définitions des routes du site internet
@@ -63,6 +64,7 @@ const Router = () => {
                 />
                 <Route path="/medias/nous-ecouter/" element={<NousEcouter />} />
                 <Route path="/contact/nous-soutenir/" element={<Soutien />} />
+                <Route path="/contact/nous-contacter/" element={<Contact />} />
                 <Route path="*" element={<E404 />} />
             </Routes>
         </BrowserRouter>

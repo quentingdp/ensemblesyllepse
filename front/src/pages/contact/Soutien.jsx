@@ -50,13 +50,12 @@ export default function Soutien() {
                 </Helmet>
                 <h1>Nous soutenir</h1>
                 <p>
-                    L'ensemble vocal a des objectifs d'envergure : en tant
-                    qu'ensemble professionnel, faire vivre toutes les personnes
-                    y contribuant. Nous y sommes toutes et tous très investis et
-                    avons la chance de recevoir des subventions de divers
-                    organismes mais cela ne suffit pas encore. Pour que
-                    l'ensemble aille plus loin, nous avons besoin de
-                    financements.
+                    L'ensemble vocal a un objectif d'envergure : faire vivre
+                    toutes les personnes y contribuant. Nous y sommes toutes et
+                    tous très investis et avons la chance de recevoir des
+                    subventions de divers organismes mais cela ne suffit pas
+                    encore. Pour que l'ensemble aille plus loin, nous avons
+                    besoin de vous.
                 </p>
                 <p>
                     Syllepse est une association à but non lucratif reconnue

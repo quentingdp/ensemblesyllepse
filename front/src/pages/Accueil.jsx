@@ -173,10 +173,10 @@ export default function Accueil() {
                             <li>
                                 <h3>Prendre ensemble</h3>
                                 <p>
-                                    Un chœur c'est avant tout une multitude
+                                    Un chœur est avant tout une multitude
                                     d'individus qui s'unissent et qui s'emparent
-                                    d'un projet artistique. C'est trouver une
-                                    unité dans la diversité.
+                                    d'un projet artistique. Il s'agit de trouver
+                                    une unité dans la diversité.
                                 </p>
                             </li>
                             <li>
