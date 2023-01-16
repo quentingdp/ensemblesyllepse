@@ -16,7 +16,7 @@ const StyleNavigationReduit = styled.header`
 export const StyleChoristes = styled.main`
     padding: 15px;
     max-width: 1440px;
-    min-height: 89vh;
+    min-height: 80vh;
     margin: auto;
     display: flex;
     justify-content: space-evenly;

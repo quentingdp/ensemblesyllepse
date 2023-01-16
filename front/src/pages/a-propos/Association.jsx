@@ -10,7 +10,7 @@ import PiedDePage from "../../components/PiedDePage"
 import photoBernardMirabel from "../../images/photos/Bernard_Mirabel.jpg"
 import photoYvesGosselin from "../../images/photos/Yves_Gosselin.jpg"
 import photoOlivierWalter from "../../images/photos/Olivier_Walter.jpg"
-import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.png"
+import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -20,7 +20,7 @@ const StyleNavigationReduit = styled.header`
 export const StyleAssociation = styled.main`
     padding: 15px;
     max-width: 1440px;
-    min-height: 89vh;
+    min-height: 80vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -63,12 +63,12 @@ export default function Association() {
                     ]}
                 />
                 <Carte
-                    photo={photoNansDeJesus}
+                    photo={photoInconnue}
                     nom="Dewy Besson"
                     biographie={[""]}
                 />
                 <Carte
-                    photo={photoNansDeJesus}
+                    photo={photoInconnue}
                     nom="Isabelle Poirier-Coutansais"
                     biographie={[""]}
                 />

@@ -38,7 +38,7 @@ const StyleEnteteAccueil = styled.header`
 export const StyleAccueil = styled.main`
     padding: 15px;
     max-width: 1440px;
-    min-height: 89vh;
+    min-height: 80vh;
     margin: auto;
 
     .sous-titre {

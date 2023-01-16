@@ -9,6 +9,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoEmmanuelleDaCosta from "../../images/photos/Emmanuelle_Da_Costa.jpg"
 import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.png"
+import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -18,7 +19,7 @@ const StyleNavigationReduit = styled.header`
 export const StyleCompositeurs = styled.main`
     padding: 15px;
     max-width: 1440px;
-    min-height: 89vh;
+    min-height: 80vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -54,7 +55,7 @@ export default function Compositeurs() {
                     biographie={[""]}
                 />
                 <Carte
-                    photo={photoNansDeJesus}
+                    photo={photoInconnue}
                     nom="Filipe Rodriguez"
                     biographie={[""]}
                 />

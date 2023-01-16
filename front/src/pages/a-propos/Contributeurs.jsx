@@ -8,9 +8,9 @@ import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoBenoitMorros from "../../images/photos/Benoit_Morros.jpg"
-import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.png"
 import photoPaulineHervouet from "../../images/photos/Pauline_Hervouet.jpg"
 import photoQuentinGuillon from "../../images/photos/Quentin_Guillon_de_Prince.jpg"
+import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -20,7 +20,7 @@ const StyleNavigationReduit = styled.header`
 export const StyleContributeurs = styled.main`
     padding: 15px;
     max-width: 1440px;
-    min-height: 89vh;
+    min-height: 80vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -64,7 +64,7 @@ export default function Contributeurs() {
                 />
                 <h2>Création des visuels pour les concerts</h2>
                 <Carte
-                    photo={photoNansDeJesus}
+                    photo={photoInconnue}
                     nom="Sarah Bordes"
                     biographie={[
                         "Sarah BORDES, création des visuels pour les concerts",

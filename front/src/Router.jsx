@@ -12,6 +12,10 @@ import ShakespearesSongs from "./pages/programmes/ShakespearesSongs"
 import Nuits from "./pages/programmes/Nuits"
 import Entrelacs from "./pages/programmes/Entrelacs"
 import ChantsEtPoesies from "./pages/programmes/ChantsEtPoesies"
+import Ombres from "./pages/programmes/Ombres"
+import Miroir from "./pages/programmes/Miroir"
+import Kaleidoscope from "./pages/programmes/Kaleidoscope"
+import NousEcouter from "./pages/medias/NousEcouter"
 import Soutien from "./pages/contact/Soutien"
 import E404 from "./pages/E404"
 
@@ -51,6 +55,13 @@ const Router = () => {
                     path="/programmes/2022-chants-et-poesies/"
                     element={<ChantsEtPoesies />}
                 />
+                <Route path="/programmes/2023-ombres/" element={<Ombres />} />
+                <Route path="/programmes/2023-miroir/" element={<Miroir />} />
+                <Route
+                    path="/programmes/2022-kaleidoscope/"
+                    element={<Kaleidoscope />}
+                />
+                <Route path="/medias/nous-ecouter/" element={<NousEcouter />} />
                 <Route path="/contact/nous-soutenir/" element={<Soutien />} />
                 <Route path="*" element={<E404 />} />
             </Routes>

@@ -129,17 +129,13 @@ export default function Navigation() {
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2023-ombres.html">
-                                Ombres
-                            </a>
+                            <a href="/programmes/2023-ombres/">Ombres</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2022-nuits.html">
-                                Miroir
-                            </a>
+                            <a href="/programmes/2023-miroir/">Miroir</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2022-nuits.html">
+                            <a href="/programmes/2022-kaleidoscope/">
                                 Kaléidoscope
                             </a>
                         </li>
@@ -149,7 +145,7 @@ export default function Navigation() {
                     <span className="menu-navigation-wrap-title">Médias</span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
-                            <a href="/fd">Nous écouter</a>
+                            <a href="/medias/nous-ecouter/">Nous écouter</a>
                         </li>
                     </ul>
                 </li>
