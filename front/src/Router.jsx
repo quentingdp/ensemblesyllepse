@@ -9,6 +9,8 @@ import Compositeurs from "./pages/a-propos/Compositeurs"
 import Association from "./pages/a-propos/Association"
 import Contributeurs from "./pages/a-propos/Contributeurs"
 import ShakespearesSongs from "./pages/programmes/ShakespearesSongs"
+import Nuits from "./pages/programmes/Nuits"
+import Entrelacs from "./pages/programmes/Entrelacs"
 import ChantsEtPoesies from "./pages/programmes/ChantsEtPoesies"
 import Soutien from "./pages/contact/Soutien"
 import E404 from "./pages/E404"
@@ -39,6 +41,11 @@ const Router = () => {
                 <Route
                     path="/programmes/2021-shakespeare-s-songs/"
                     element={<ShakespearesSongs />}
+                />
+                <Route path="/programmes/2021-nuits/" element={<Nuits />} />
+                <Route
+                    path="/programmes/2022-entrelacs/"
+                    element={<Entrelacs />}
                 />
                 <Route
                     path="/programmes/2022-chants-et-poesies/"

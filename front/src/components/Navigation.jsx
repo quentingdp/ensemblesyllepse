@@ -118,14 +118,10 @@ export default function Navigation() {
                             </a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2022-nuits.html">
-                                Nuits
-                            </a>
+                            <a href="/programmes/2021-nuits/">Nuits</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
-                            <a href="/pages/programmes/2022-nuits.html">
-                                Entrelacs
-                            </a>
+                            <a href="/programmes/2022-entrelacs/">Entrelacs</a>
                         </li>
                         <li className="menu-navigation-wrap-option">
                             <a href="/programmes/2022-chants-et-poesies/">
