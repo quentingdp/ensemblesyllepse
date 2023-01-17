@@ -77,7 +77,7 @@ const progEntrelacs = [
                 auteur: "Claudio Monteverdi (1567-1643)",
             },
             {
-                titre: "La Foule Édith Piaf (1915-1963)",
+                titre: "La foule, Édith Piaf (1915-1963)",
                 auteur: "Arr. Filipe Rodriguez (Syllepse)",
                 info: "Création mondiale",
             },
@@ -110,7 +110,7 @@ export default function Entrelacs() {
                 titre="Entrelacs"
                 annee="2022"
                 introduction={[
-                    "Une véritable mosaïque musicale à travers les styles et les époques. Quatre mini-concerts en un, appelant à la participation des spectateurs. Spectacle mis en scène et spatialisé par Jean Lacornerie, incluant deux créations d'Éric Lebrun et d'Emmanuelle Da Costa. Ce programme a été présenté avec succès entre février et juin 2022, notamment au Festival International de Nancy “Voix du monde” puis au Festival International du Florilège Vocal de Tours.",
+                    "Une véritable mosaïque musicale à travers les styles et les époques. Quatre mini-concerts en un, appelant à la participation des spectateurs. Spectacle mis en scène et spatialisé par JEAN LACORNERIE, incluant deux créations d'ÉRIC LEBRUN et d'EMMANUELLE DA COSTA. Ce programme a été présenté avec succès entre février et juin 2022, notamment au Festival International de Nancy “Voix du monde” puis au Festival International du Florilège Vocal de Tours.",
                 ]}
                 programme={progEntrelacs}
                 image={photoConcert}

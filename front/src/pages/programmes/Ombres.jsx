@@ -66,7 +66,7 @@ const progOmbres = [
             },
             {
                 titre: "Le Chant des Oiseaux",
-                auteur: "Jannequin",
+                auteur: "Janequin",
             },
         ],
     },

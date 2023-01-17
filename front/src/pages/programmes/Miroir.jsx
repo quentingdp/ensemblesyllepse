@@ -70,7 +70,7 @@ const progMiroir = [
             },
             {
                 titre: "Les cris de Paris",
-                auteur: "Jannequin",
+                auteur: "Janequin",
                 info: "Réécriture en français moderne par l'Ensemble Vocal Syllepse, création mondiale",
             },
             {
@@ -101,9 +101,9 @@ export default function Miroir() {
                 introduction={[
                     "Sélectionné par la Cité de la Voix pour participer aux résidences estivales destinées aux jeunes ensembles professionnels, l'Ensemble Vocal Syllepse présentera en juillet 2023 un programme mêlant musique de la renaissance et musique contemporaine.",
                     "Musique de la Renaissance : 20’",
-                    "Fasciné par la musique de la Renaissance et sa capacité à être une musique moderne et innovante, l'Ensemble Vocal Syllepse vous présente un programme européen avec la musique de Claudio Monteverdi (Italie), Clément Janequin (France) et John Ward (Angleterre). Ces trois compositeurs ont un même désir : Servir et mettre en valeur le texte par leur musique, quitte à faire fi des lois d'écriture !",
+                    "Fasciné par la musique de la Renaissance et sa capacité à être une musique moderne et innovante, l'Ensemble Vocal Syllepse vous présente un programme européen avec la musique de CLAUDIO MONTEVERDI (Italie), CLÉMENT JANEQUIN (France) et JOHN WARD (Angleterre). Ces trois compositeurs ont un même désir : Servir et mettre en valeur le texte par leur musique, quitte à faire fi des lois d'écriture !",
                     "Musique Contemporaine : 35’",
-                    "Chanter la musique d'aujourd'hui et mettre en valeur sa diversité est un désir de l'Ensemble Vocal Syllepse. Découvrez les effets de textures d'Emmanuelle Da Costa, la recherche émotionnelle et poétique de Nans de Jesus, les jeux vocaux de Guy Reibel, une composition sur le thème de la foule d'Anna Gallon et enfin une réécriture des Cris de Paris de Janequin en collaboration avec un jeune Rappeur : Tristan Gaillard !",
+                    "Chanter la musique d'aujourd'hui et mettre en valeur sa diversité est un désir de l'Ensemble Vocal Syllepse. Découvrez les effets de textures d'EMMANUELLE DA COSTA, la recherche émotionnelle et poétique de NANS DE JESUS, les jeux vocaux de GUY REIBEL, une composition sur le thème de la foule d'ANNA GALLON et enfin une réécriture des Cris de Paris de JANEQUIN en collaboration avec un jeune Rappeur : TRISTAN GAILLARD !",
                 ]}
                 programme={progMiroir}
                 image={photoConcert}

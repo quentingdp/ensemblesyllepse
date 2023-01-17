@@ -41,7 +41,7 @@ const progShakespearesSongs = [
             {
                 titre: "One Charming Night",
                 soliste:
-                    "Mezzo-soprano : Malo Cosset - Chéneau, Clavecin : Claire Meusnier",
+                    "Mezzo-soprano : Malo Cosset-Chéneau, Clavecin : Claire Meusnier",
                 auteur: "Henry Purcell (1659-1695)",
             },
             {
@@ -55,7 +55,7 @@ const progShakespearesSongs = [
             {
                 titre: "Music for a While",
                 soliste:
-                    "Contre-ténor : Etienne Goulot - Martin, Clavecin : Claire Meusnier",
+                    "Contre-ténor : Etienne Goulot-Martin, Clavecin : Claire Meusnier",
                 auteur: "Henry Purcell (1659-1695)",
             },
             {
@@ -107,7 +107,7 @@ export default function ShakespearesSongs() {
                 titre="Shakespeare's songs"
                 annee="2021"
                 introduction={[
-                    "Centré sur les mélodieux vers de William Shakespeare, Syllepse vous propose un voyage éclectique et poétique dans le temps, en réunissant des compositeurs d'aujourd'hui inspirés de son œuvre et des compositeurs ayant vécu à l'époque shakespearienne : Dowland, Weelkes, Purcell, Bird, John Bull, Haendel et Morley côtoient le répertoire moderne de Macfarren, Lindberg et Mantyjarvi.",
+                    "Centré sur les mélodieux vers de WILLIAM SHAKESPEARE, Syllepse vous propose un voyage éclectique et poétique dans le temps, en réunissant des compositeurs d'aujourd'hui inspirés de son œuvre et des compositeurs ayant vécu à l'époque shakespearienne : DOWLAND, WEELKES, PURCELL, BIRD, JOHN BULL, HAENDEL et MORLEY côtoient le répertoire moderne de MACFARREN, LINDBERG et MANTYJARVI.",
                 ]}
                 programme={progShakespearesSongs}
                 image={photoConcert}
