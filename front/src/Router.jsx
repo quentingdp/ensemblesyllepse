@@ -26,6 +26,7 @@ const Router = () => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Accueil />} />
+                <Route path="/index.html" element={<Accueil />} />
                 <Route
                     path="/a-propos/ophelia-besson/"
                     element={<OpheliaBesson />}

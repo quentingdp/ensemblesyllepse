@@ -1,6 +1,6 @@
 //Import de librairies externes
 import React from "react"
-import ReactPlayer from "react-player"
+import ReactPlayer from "react-player/lazy"
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
@@ -131,6 +131,7 @@ export default function NousEcouter() {
                         width="100%"
                         height="100%"
                         url="https://youtu.be/53pSVlkeBfM"
+                        controls="true"
                     />
                 </div>
             </StyleNousEcouter>
