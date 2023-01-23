@@ -1,6 +1,6 @@
 //Import de librairies externes
 import React from "react"
-import ReactPlayer from "react-player/lazy"
+import ReactPlayer from "react-player/youtube"
 import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
