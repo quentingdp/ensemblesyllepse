@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import PiedDePage from "../components/PiedDePage"
 import Navigation from "../components/Navigation"
+import { choristes } from "../data/choristes.js"
+import { effectif } from "../functions/effectif.js"
 import logoSyllepse from "../images/logo/LogoSyllepseEnsembleVocal_blanc.png"
 import photoPageAccueil from "../images/photos/IMG-20220419-WA0004.jpg"
 import photoDescriptionQuestSyllepse from "../images/photos/DSCF1280.jpg"
@@ -111,6 +113,7 @@ export const StyleAccueil = styled.main`
         }
     }
 `
+
 export default function Accueil() {
     return (
         <React.Fragment>
@@ -141,14 +144,14 @@ export default function Accueil() {
                     <p className="presentation-texte-description">
                         Créé par Ophélia Besson à Lyon au printemps 2020,
                         Syllepse est un ensemble vocal a cappella à géométrie
-                        variable composé de 30 jeunes choristes originaires de
-                        toute la France. Il fait le pari d'associer musiques
-                        anciennes et contemporaines à destination d'un large
-                        public. Chaque projet est unique dans sa formation
-                        allant du un par voix au grand choeur.
+                        variable composé de {effectif(choristes)} jeunes
+                        choristes originaires de toute la France. Il fait le
+                        pari d'associer musiques anciennes et contemporaines à
+                        destination d'un large public. Chaque projet est unique
+                        dans sa formation allant du un par voix au grand choeur.
                     </p>
                     <p className="presentation-texte-description">
-                        Ce temps arrêté de confinement a permis au projet de
+                        Le temps arrêté du confinement a permis au projet de
                         s'imaginer. C'est un ensemble collaboratif qui a fédéré
                         et rassemblé de jeunes artistes en quête de sens voulant
                         se professionnaliser.
@@ -173,7 +176,7 @@ export default function Accueil() {
                             <li>
                                 <h3>Prendre ensemble</h3>
                                 <p>
-                                    Un chœur est avant tout une multitude
+                                    Un chœur est avant tout un groupe
                                     d'individus qui s'unissent et qui s'emparent
                                     d'un projet artistique. Il s'agit de trouver
                                     une unité dans la diversité.
