@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
-import photoOphelia from "../../images/photos/DSCF1169.jpg"
+import photoOphelia from "../../images/photos/DSCF1169.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;

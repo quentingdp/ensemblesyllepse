@@ -7,9 +7,9 @@ import { Helmet } from "react-helmet"
 import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
-import photoBernardMirabel from "../../images/photos/Bernard_Mirabel.jpg"
-import photoYvesGosselin from "../../images/photos/Yves_Gosselin.jpg"
-import photoOlivierWalter from "../../images/photos/Olivier_Walter.jpg"
+import photoBernardMirabel from "../../images/photos/Bernard_Mirabel.avif"
+import photoYvesGosselin from "../../images/photos/Yves_Gosselin.avif"
+import photoOlivierWalter from "../../images/photos/Olivier_Walter.avif"
 import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
