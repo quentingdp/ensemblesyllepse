@@ -25,6 +25,7 @@ export const StyleContributeurs = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 
     h1 {
         margin-bottom: 50px;

@@ -2,7 +2,6 @@
 import styled from "styled-components"
 
 export const StyleCarte = styled.article`
-    height: 45vh;
     width: 70%;
     border: 2px solid white;
     border-radius: 10px;
@@ -10,14 +9,17 @@ export const StyleCarte = styled.article`
     margin: 40px 0;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
     .image {
+        align-self: center;
+        height: 300px;
         width: 30%;
         object-fit: contain;
     }
 
     .description {
-        width: 70%;
+        width: 65%;
         padding: 10px;
         overflow: scroll;
     }
@@ -48,6 +50,33 @@ export const StyleCarte = styled.article`
     .detail {
         text-align: center;
         margin-top: 10px;
+    }
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        flex-direction: column;
+        align-items: center;
+        .image {
+            height: 200px;
+            width: unset;
+        }
+
+        .description {
+            width: unset;
+        }
+    }
+
+    @media (max-width: 768px) {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        .image {
+            height: 120px;
+            width: unset;
+        }
+
+        .description {
+            width: unset;
+        }
     }
 `
 

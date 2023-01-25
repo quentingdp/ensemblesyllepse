@@ -26,11 +26,11 @@ export const StyleChoristes = styled.main`
 
     h1 {
         width: 100%;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
 
     .bloc-choristes {
-        margin: 0 10px;
+        margin: 20px 10px;
 
         h2 {
             margin-bottom: 15px;
@@ -39,7 +39,7 @@ export const StyleChoristes = styled.main`
 
     img {
         width: 100%;
-        margin: 30px 0;
+        margin: 20px 0;
     }
 `
 export default function Choristes() {

@@ -24,6 +24,7 @@ export const StyleCompositeurs = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 `
 export default function Compositeurs() {
     return (

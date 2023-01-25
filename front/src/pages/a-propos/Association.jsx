@@ -25,6 +25,7 @@ export const StyleAssociation = styled.main`
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 `
 export default function Association() {
     return (
