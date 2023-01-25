@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
-import photoConcert from "../../images/photos/DSCF1280.jpg"
+import photoConcert from "../../images/photos/DSCF1280.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;

@@ -7,7 +7,7 @@ import { Helmet } from "react-helmet"
 import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
-import photoEmmanuelleDaCosta from "../../images/photos/Emmanuelle_Da_Costa.jpg"
+import photoEmmanuelleDaCosta from "../../images/photos/Emmanuelle_Da_Costa.avif"
 import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.png"
 import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
