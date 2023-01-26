@@ -8,8 +8,8 @@ import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoBenoitMorros from "../../images/photos/Benoit_Morros.avif"
-import photoPaulineHervouet from "../../images/photos/Pauline_Hervouet.jpg"
-import photoQuentinGuillon from "../../images/photos/Quentin_Guillon_de_Prince.jpg"
+import photoPaulineHervouet from "../../images/photos/Pauline_Hervouet.avif"
+import photoQuentinGuillon from "../../images/photos/Quentin_Guillon_de_Prince.avif"
 import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`

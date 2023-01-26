@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
-import photoChoristes from "../../images/photos/photo_Syllepse_2.jpg"
+import photoChoristes from "../../images/photos/photo_Syllepse_2.avif"
 import { choristes } from "../../data/choristes.js"
 
 const StyleNavigationReduit = styled.header`
