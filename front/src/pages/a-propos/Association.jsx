@@ -10,7 +10,8 @@ import PiedDePage from "../../components/PiedDePage"
 import photoBernardMirabel from "../../images/photos/Bernard_Mirabel.avif"
 import photoYvesGosselin from "../../images/photos/Yves_Gosselin.avif"
 import photoOlivierWalter from "../../images/photos/Olivier_Walter.avif"
-import photoInconnue from "../../images/logo/image_par_defaut.jpg"
+import photoDewyBesson from "../../images/photos/Dewy_Besson.avif"
+import photoIsabellePoirierCoutansais from "../../images/photos/Isabelle_Poirier-Coutansais.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -64,14 +65,18 @@ export default function Association() {
                     ]}
                 />
                 <Carte
-                    photo={photoInconnue}
+                    photo={photoDewyBesson}
                     nom="Dewy Besson"
-                    biographie={[""]}
+                    biographie={[
+                        "Dewy Besson est né en 1972. Professeur agrégé d'éducation musicale, il est le fondateur de l'association Tous à la musique à Lyon. Il aide au rayonnement de l'ensemble vocal Syllepse sur le territoire et apporte son expertise et expérience du terrain pour ouvrir la culture et l'art choral auprès des publics éloignés. Ayant une connaissance large des institutions et du système associatif, il est membre ressource des aides étatiques.",
+                    ]}
                 />
                 <Carte
-                    photo={photoInconnue}
+                    photo={photoIsabellePoirierCoutansais}
                     nom="Isabelle Poirier-Coutansais"
-                    biographie={[""]}
+                    biographie={[
+                        "Née en 1978, et professeur d'enseignement artistique en Conservatoire, Isabelle aide à l'administration de l'ensemble vocal Syllepse, contribue à l'essor professionnel des jeunes artistes, participe aux dossiers de subventions et tisse des partenariats culturels et institutionnels.",
+                    ]}
                 />
             </StyleAssociation>
             <PiedDePage />
