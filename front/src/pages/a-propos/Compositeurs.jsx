@@ -53,7 +53,9 @@ export default function Compositeurs() {
                 <Carte
                     photo={photoNansDeJesus}
                     nom="Nans de Jesus"
-                    biographie={[""]}
+                    biographie={[
+                        "Compositeur aux multiples influences, Nans de Jesus s'est formé à diverses écoles : guitare flamenca, chanson, chant choral, musiques électroniques. Fasciné par les différentes expressions de la voix, des traditions vocales méditerranéennes aux harmonies du chant choral, par les musiques du XXème siècle et par l'arrivée de la synthèse sonore, il explore aujourd'hui diverses champs de compositions. La majorité de son travail se dirige vers l'image (courts métrages et jeux vidéos) où la musique électronique, le design sonore et l'expression vocale prennent une place centrale. Il réserve une partie de son travail à l'écriture chorale dans laquelle il livre une musique aux textures intenses et aux couleurs vives.",
+                    ]}
                 />
                 <Carte
                     photo={photoInconnue}
