@@ -77,7 +77,7 @@ const progChantsEtPoesies = [
             },
             {
                 titre: "II. Le requin et la mouette",
-                soliste: "(Alto solo : Zoé Cassard)",
+                soliste: "(Mezzo-soprano solo : Zoé Cassard)",
             },
             {
                 titre: "III. Amer avenir",

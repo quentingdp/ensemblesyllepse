@@ -188,10 +188,11 @@ export default function Accueil() {
                                     Sans cesse chercher à comprendre. Comprendre
                                     un son, comprendre une résonance, un
                                     phénomène acoustique. Comprendre ce qui
-                                    relie deux époques opposées dans l'histoire
-                                    de la musique. Chercher à comprendre ce qui
-                                    nous anime, ce qui nous unit. Comprendre ce
-                                    langage universel qu'est la musique.
+                                    relie les différents styles de l'histoire de
+                                    la musique entre eux. Chercher à comprendre
+                                    ce qui nous anime, ce qui nous unit.
+                                    Comprendre ce langage universel qu'est la
+                                    musique.
                                 </p>
                             </li>
                             <li>
