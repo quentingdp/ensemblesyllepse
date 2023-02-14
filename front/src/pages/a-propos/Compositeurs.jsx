@@ -62,6 +62,16 @@ export default function Compositeurs() {
                     nom="Filipe Rodriguez"
                     biographie={[""]}
                 />
+                <Carte
+                    photo={photoInconnue}
+                    nom="Mathieu Bolcato"
+                    biographie={[""]}
+                />
+                <Carte
+                    photo={photoInconnue}
+                    nom="Eric Lebrun"
+                    biographie={[""]}
+                />
             </StyleCompositeurs>
             <PiedDePage />
         </React.Fragment>
