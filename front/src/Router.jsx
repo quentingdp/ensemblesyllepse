@@ -8,6 +8,7 @@ import Choristes from "./pages/a-propos/Choristes"
 import Compositeurs from "./pages/a-propos/Compositeurs"
 import Association from "./pages/a-propos/Association"
 import Contributeurs from "./pages/a-propos/Contributeurs"
+import Agenda from "./pages/Agenda"
 import ShakespearesSongs from "./pages/programmes/ShakespearesSongs"
 import Nuits from "./pages/programmes/Nuits"
 import Entrelacs from "./pages/programmes/Entrelacs"
@@ -44,6 +45,7 @@ const Router = () => {
                     path="/a-propos/contributeurs/"
                     element={<Contributeurs />}
                 />
+                <Route path="/agenda/" element={<Agenda />} />
                 <Route
                     path="/programmes/2021-shakespeare-s-songs/"
                     element={<ShakespearesSongs />}
