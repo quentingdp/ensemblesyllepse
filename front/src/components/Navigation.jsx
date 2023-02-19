@@ -107,6 +107,9 @@ export default function Navigation() {
                         </li>
                     </ul>
                 </li>
+                <li className="menu-navigation-option">
+                    <a href="/agenda/">Agenda</a>
+                </li>
                 <li className="menu-navigation-option wrap">
                     <span className="menu-navigation-wrap-title">
                         Programmes

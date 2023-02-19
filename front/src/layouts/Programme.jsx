@@ -1,6 +1,11 @@
 //Import de librairies externes
 import styled from "styled-components"
 
+//Dépendences internes
+import Concert from "../components/Concert"
+import { concerts } from "../data/concerts.js"
+import { concertsProgrammeAVenir } from "../functions/triFiltreConcerts.js"
+
 export const StyleProgramme = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -27,7 +32,7 @@ export const StyleProgramme = styled.main`
         margin: 20px 0;
     }
 
-    .programme {
+    .programme-desc {
         width: 35%;
     }
 
@@ -62,8 +67,14 @@ export const StyleProgramme = styled.main`
         color: #b2725b;
     }
 
+    .absence-concert {
+        margin: 40px 0;
+        width: 100%;
+        text-align: center;
+    }
+
     @media (max-width: 768px) {
-        .programme {
+        .programme-desc {
             width: 100%;
         }
 
@@ -93,7 +104,7 @@ export default function Programme({
                 )
             })}
             <h2>Programme</h2>
-            <article className="programme">
+            <article className="programme-desc">
                 {programme.map((chapitre, index) => {
                     return (
                         <div key={`${index}`} className="chapitre">
@@ -129,6 +140,16 @@ export default function Programme({
                 })}
             </article>
             <img src={image} alt={alt} />
+            <h2>Concerts à venir</h2>
+            {concertsProgrammeAVenir(concerts, titre).length === 0 ? (
+                <p className="absence-concert">Pas de date prévue</p>
+            ) : (
+                concertsProgrammeAVenir(concerts, titre).map(
+                    (concert, index) => {
+                        return <Concert key={`${index}`} concert={concert} />
+                    }
+                )
+            )}
         </StyleProgramme>
     )
 }

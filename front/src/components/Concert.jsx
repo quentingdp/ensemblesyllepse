@@ -12,6 +12,7 @@ export const StyleConcert = styled.article`
     border-radius: 10px;
     padding: 5px;
     margin: 40px 0;
+    width: 100%;
     align-items: center;
 
     .date {
@@ -117,7 +118,7 @@ export default function Concert({ concert }) {
                 <p className="mois">{moisCompact(concert.date)}</p>
             </div>
             <p className="heure">{heure(concert.date)}</p>
-            <h2 className="programme">{concert.programme}</h2>
+            <h3 className="programme">{concert.programme}</h3>
             {concert.lieu.length === 0 ? (
                 <p className="lieu">LIEU A DEFINIR</p>
             ) : (
