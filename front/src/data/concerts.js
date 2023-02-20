@@ -5,70 +5,41 @@ Les champs programme et date sont obligatoires. lieu est également obligatoire,
 
 export const concerts = [
     {
-        programme: "Chants et poésies",
-        date: "2023-05-12T17:30:00.000",
+        programme: "Ombres",
+        date: "2023-04-16T20:30:00.000",
+        lieu: ["Temple Lanterne", "10 rue Lanterne", "69001 LYON"],
+        lienReservation:
+            "https://www.helloasso.com/associations/ensemble-vocal-syllepse/evenements/ombres",
+    },
+    {
+        programme: "Ombres",
+        date: "2023-05-07T20:30:00.000",
         lieu: [
-            "Festival imaginaire des gônes musicales",
-            "Théâtre de la lumière",
-            "88 avenue de l'inconnue",
-            "Feyzin",
+            "Église Saint-Laurent",
+            "2 rue du Pré de la Danse",
+            "74940 ANNECY-LE-VIEUX",
         ],
         lienReservation:
-            "https://jfkdslqmjfkdsqjfdkslqjfqskdlmkfjsqdmjfdsqkmjfqsd",
+            "https://www.helloasso.com/associations/ensemble-vocal-syllepse/evenements/ombres-1",
     },
     {
-        programme: "Chants et poésies",
-        date: "2023-12-31T00:00:00.000",
-        lieu: [],
+        programme: "Ombres",
+        date: "2023-05-08T20:30:00.000",
+        lieu: [
+            "Église St Symphorien",
+            "171 rue Auguste Ravier",
+            "38510 MORESTEL",
+        ],
+        lienReservation:
+            "https://www.helloasso.com/associations/ensemble-vocal-syllepse/evenements/ombres-morestel",
     },
     {
-        programme: "Juin",
-        date: "2023-06-15T12:12:00.000",
-        lieu: [],
-    },
-    {
-        programme: "Juillet",
-        date: "2023-07-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-03-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-01-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-02-11T09:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-04-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2025-08-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-09-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-10-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
-    },
-    {
-        programme: "jfkdlsqm",
-        date: "2023-11-15T12:12:00.000",
-        lieu: ["Arènes de Vaison"],
+        programme: "Ombres",
+        date: "2023-02-12T17:00:00.000",
+        lieu: [
+            "Église du Rosaire",
+            "4 place Roger Salengro",
+            "69190 SAINT-FONS",
+        ],
     },
 ]

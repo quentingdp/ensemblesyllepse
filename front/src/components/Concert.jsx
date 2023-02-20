@@ -55,6 +55,10 @@ export const StyleConcert = styled.article`
         border-radius: 5px;
     }
 
+    .reservation:hover {
+        color: red;
+    }
+
     @media (min-width: 768px) and (max-width: 992px) {
         grid-template-columns: 130px 100px 1fr;
 
@@ -129,9 +133,9 @@ export default function Concert({ concert }) {
                 </div>
             )}
             {concert.lienReservation ? (
-                <button className="reservation">
-                    <a href={concert.lienReservation}>RÉSERVER ►</a>
-                </button>
+                <a className="reservation" href={concert.lienReservation}>
+                    RÉSERVER ►
+                </a>
             ) : null}
         </StyleConcert>
     )
