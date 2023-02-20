@@ -9,6 +9,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoEmmanuelleDaCosta from "../../images/photos/Emmanuelle_Da_Costa.avif"
 import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.avif"
+import photoFilipeRodriguez from "../../images/photos/Filipe_Rodriguez.avif"
 import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
@@ -58,9 +59,12 @@ export default function Compositeurs() {
                     ]}
                 />
                 <Carte
-                    photo={photoInconnue}
+                    photo={photoFilipeRodriguez}
                     nom="Filipe Rodriguez"
-                    biographie={[""]}
+                    biographie={[
+                        "Filipe Rodriguez (1995) est un musicien suisse qui découvre la musique classique par le piano suivi de l'orgue à Payerne. Imprégné de l'art choral helvétique, il dirige, chante puis il suit ses premiers cours de composition en 2017 auprès du compositeur et organiste Valentin Villard. En 2019, Filipe est certifié facteur de pianos (réparateur et accordeur) à Lausanne et est admis au \"Conservatoire National Supérieur de Musique et Danse\" de Lyon (CNSMD) dans la classe de composition de David Chappuis.",
+                        "Aujourd'hui, il est étudiant compositeur au CNSMD et travaille en tant qu'accordeur et réparateur de pianos professionnel. Sa musique mêle ses propres influences culturelles locales, tout en gardant le regard tourné vers l'actualité musicale. A Syllepse, Filipe chante en tant que ténor.",
+                    ]}
                 />
                 <Carte
                     photo={photoInconnue}
