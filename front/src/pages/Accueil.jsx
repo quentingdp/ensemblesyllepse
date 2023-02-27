@@ -6,8 +6,12 @@ import { Helmet } from "react-helmet"
 //Dépendences internes
 import PiedDePage from "../components/PiedDePage"
 import Navigation from "../components/Navigation"
+import Concert from "../components/Concert"
 import { choristes } from "../data/choristes.js"
+import { concerts } from "../data/concerts.js"
 import { effectif } from "../functions/effectif.js"
+import { prochainConcert } from "../functions/triFiltreConcerts.js"
+import brochurePdfMasterclass from "../content/Masterclass-Direction-de-Choeur-2023-Syllepse.pdf"
 import logoSyllepse from "../images/logo/LogoSyllepseEnsembleVocal_blanc.png"
 import photoPageAccueil from "../images/photos/IMG-20220419-WA0004.avif"
 import photoDescriptionQuestSyllepse from "../images/photos/DSCF1280.avif"
@@ -60,6 +64,11 @@ export const StyleAccueil = styled.main`
             margin: 15px 0px;
             text-align: center;
         }
+    }
+
+    .lien-dans-paragraphe {
+        text-decoration: underline;
+        font-size: 22px;
     }
 
     .deux-colonnes {
@@ -139,6 +148,31 @@ export default function Accueil() {
                         "prendre ensemble, comprendre, embrasser"
                     </p>
                 </div>
+                <article className="presentation-texte">
+                    <h2>Masterclass de direction de choeur</h2>
+                    <p className="presentation-texte-description">
+                        En avril 2023, l'Ensemble Vocal Syllepse propose de
+                        suivre une Masterclass de direction de choeur. Pour
+                        s'inscrire et voir plus de détails sur le programme de
+                        cette Masterclass, n'hésitez pas à télécharger et nous
+                        renvoyer la brochure ci-dessous.
+                    </p>
+                    <p>
+                        <a
+                            className="lien-dans-paragraphe"
+                            href={brochurePdfMasterclass}
+                        >
+                            Brochure de participation à la Masterclass de
+                            direction de choeur
+                        </a>
+                    </p>
+                </article>
+                {prochainConcert(concerts).hasOwnProperty("programme") ? (
+                    <article className="presentation-texte">
+                        <h2>Notre prochain concert</h2>
+                        <Concert concert={prochainConcert(concerts)} />
+                    </article>
+                ) : null}
                 <article className="presentation-texte">
                     <h2>Une identité forte</h2>
                     <p className="presentation-texte-description">

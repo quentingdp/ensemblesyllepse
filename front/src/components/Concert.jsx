@@ -14,6 +14,7 @@ export const StyleConcert = styled.article`
     margin: 40px 0;
     width: 100%;
     align-items: center;
+    text-align: center;
 
     .date {
         grid-column-start: 1;

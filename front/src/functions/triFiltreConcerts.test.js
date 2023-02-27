@@ -2,6 +2,7 @@ import {
     concertsAVenir,
     concertsPasses,
     concertsProgrammeAVenir,
+    prochainConcert,
 } from "./triFiltreConcerts.js"
 
 const concerts = [
@@ -38,6 +39,19 @@ const concerts = [
     {
         programme: "Le temps d'un songe",
         date: "2458-12-28T18:01:00.000",
+        lieu: [],
+    },
+]
+
+const concertsTousTermines = [
+    {
+        programme: "Programme passé",
+        date: "2005-01-01T17:30:00.000",
+        lieu: [],
+    },
+    {
+        programme: "Programme moins passé",
+        date: "2012-01-01T17:30:00.000",
         lieu: [],
     },
 ]
@@ -109,5 +123,20 @@ describe("La fonction concertsProgrammeAVenir", () => {
                 lieu: [],
             },
         ])
+    })
+})
+
+describe("La fonction prochainConcert", () => {
+    test("renvoie bien le prochain concert existant", () => {
+        const result = prochainConcert(concerts)
+        expect(result).toEqual({
+            programme: "Le temps d'un songe",
+            date: "2458-12-28T18:01:00.000",
+            lieu: [],
+        })
+    })
+    test("renvoie un objet vide s'il n'y a aucun prochain concert", () => {
+        const result = prochainConcert(concertsTousTermines)
+        expect(result).toEqual({})
     })
 })
