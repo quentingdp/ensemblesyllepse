@@ -8,9 +8,13 @@ import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoBenoitMorros from "../../images/photos/Benoit_Morros.avif"
+import photoBenoitMorrosDefaut from "../../images/photos/Benoit_Morros.jpg"
 import photoPaulineHervouet from "../../images/photos/Pauline_Hervouet.avif"
+import photoPaulineHervouetDefaut from "../../images/photos/Pauline_Hervouet.jpg"
 import photoQuentinGuillon from "../../images/photos/Quentin_Guillon_de_Prince.avif"
-import photoInconnue from "../../images/logo/image_par_defaut.jpg"
+import photoQuentinGuillonDefaut from "../../images/photos/Quentin_Guillon_de_Prince.jpg"
+import photoSarahBordes from "../../images/photos/Sarah_Bordes.avif"
+import photoSarahBordesDefaut from "../../images/photos/Sarah_Bordes.jpg"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -49,6 +53,7 @@ export default function Contributeurs() {
                 <h2>Création site internet</h2>
                 <Carte
                     photo={photoQuentinGuillon}
+                    photoDefaut={photoQuentinGuillonDefaut}
                     nom="Quentin Guillon de Princé"
                     biographie={[
                         "Musicien depuis l'âge de 4 ans, jouant de la flûte traversière et du cor d'harmonie, Quentin poursuit également des études et une carrière d'ingénieur dans l'informatique de traitement des données.",
@@ -60,20 +65,25 @@ export default function Contributeurs() {
                 </h2>
                 <Carte
                     photo={photoBenoitMorros}
+                    photoDefaut={photoBenoitMorrosDefaut}
                     nom="Benoit Morros"
                     biographie={["Benoit MORROS, Photos et prises de sons"]}
                 />
                 <h2>Création des visuels pour les concerts</h2>
                 <Carte
-                    photo={photoInconnue}
+                    photo={photoSarahBordes}
+                    photoDefaut={photoSarahBordesDefaut}
                     nom="Sarah Bordes"
                     biographie={[
-                        "Sarah BORDES, création des visuels pour les concerts",
+                        "En parallèle de ses formations et explorations variées dans les arts du chant, du piano, du théâtre, de la mise en scène, du conte, de la littérature ou encore de la danse contemporain, Sarah s'exerce depuis l'enfance en autodidacte aux arts graphiques.",
+                        "Elle explore diverses techniques, calligraphie peinture ou dessin, craie, aquarelle, stylo à encre de chine, acrylique, mais également différents supports : papiers variés, carton, tissus, bois, fresque murales, mais également peau à travers le maquillage, le body painting ou encore l'art du tatouage auquel elle commence tout juste à s'initier. Son style s'attache généralement à un univers de figures clownesques mi humaines mi végétales.",
+                        "Ayant à cœur dans son expression artistique de mettre en valeur la porosité des formes d'expression artistique, qui se nourrissent et s'enrichissent toutes les unes des autres dans son parcours, elle utilise son amour des arts plastiques graphiques lors de projets transversaux, comme la mise en scène de son spectacle musical et théâtral autour de la poésie de Jacques Prévert avec la compagnie sur qui Conter, la réalisation d'affiches et de visuels pour cette même compagnie ainsi que pour l'ensemble vocal Syllepse dans lequel elle chante, ou encore la participation à un clip de l'artiste Llimace.",
                     ]}
                 />
                 <h2>Création du logo</h2>
                 <Carte
                     photo={photoPaulineHervouet}
+                    photoDefaut={photoPaulineHervouetDefaut}
                     nom="Pauline Hervouet"
                     biographie={[
                         "Artiste interprète alliant musique, théâtre et costume, Pauline Hervouet se forme très jeune aux métiers de la scène. Elle débute l'apprentissage des flûtes à bec auprès de Gwénaël Bihan au conservatoire de Saint-Étienne, puis avec Clémence Comte au CRR de Besançon.",

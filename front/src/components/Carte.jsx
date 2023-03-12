@@ -13,9 +13,13 @@ export const StyleCarte = styled.article`
 
     .image {
         align-self: center;
-        height: 300px;
         width: 30%;
-        object-fit: contain;
+
+        img {
+            max-height: 300px;
+            width: 100%;
+            object-fit: contain;
+        }
     }
 
     .description {
@@ -56,10 +60,12 @@ export const StyleCarte = styled.article`
         flex-direction: column;
         align-items: center;
         .image {
-            height: 200px;
             width: unset;
+            img {
+                max-height: unset;
+                height: 200px;
+            }
         }
-
         .description {
             width: unset;
         }
@@ -70,20 +76,25 @@ export const StyleCarte = styled.article`
         flex-direction: column;
         align-items: center;
         .image {
-            height: 120px;
             width: unset;
+            img {
+                max-height: unset;
+                height: 120px;
+            }
         }
-
         .description {
             width: unset;
         }
     }
 `
 
-export default function Carte({ photo, nom, biographie }) {
+export default function Carte({ photo, photoDefaut, nom, biographie }) {
     return (
         <StyleCarte>
-            <img className="image" src={photo} alt={nom} />
+            <picture className="image">
+                <source srcSet={photo} />
+                <img src={photoDefaut} alt={nom} />
+            </picture>
             <div className="description">
                 <h2 className="nom">{nom}</h2>
                 {biographie.map((paragraphe, index) => {

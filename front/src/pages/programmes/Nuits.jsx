@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Nuits.avif"
+import photoConcertDefaut from "../../images/photos/Nuits.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -124,6 +125,7 @@ export default function Nuits() {
                 ]}
                 programme={progNuits}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Concert Nuits"
             />
             <PiedDePage />

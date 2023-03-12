@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Ombres.avif"
+import photoConcertDefaut from "../../images/photos/Ombres.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -132,6 +133,7 @@ export default function Ombres() {
                 ]}
                 programme={progOmbres}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Programme Ombres"
             />
             <PiedDePage />

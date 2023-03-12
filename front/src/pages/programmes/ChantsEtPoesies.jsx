@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Chants_et_poésies.avif"
+import photoConcertDefaut from "../../images/photos/Chants_et_poésies.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -111,6 +112,7 @@ export default function ChantsEtPoesies() {
                 ]}
                 programme={progChantsEtPoesies}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Concert à la salle Molière à Lyon"
             />
             <PiedDePage />

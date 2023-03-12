@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Kaleidoscope.avif"
+import photoConcertDefaut from "../../images/photos/Kaleidoscope.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -99,6 +100,7 @@ export default function Kaleidoscope() {
                 ]}
                 programme={progKaleidoscope}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Photo Syllepse Tours 2022"
             />
             <PiedDePage />

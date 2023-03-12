@@ -8,8 +8,11 @@ import Carte from "../../components/Carte"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoEmmanuelleDaCosta from "../../images/photos/Emmanuelle_Da_Costa.avif"
+import photoEmmanuelleDaCostaDefaut from "../../images/photos/Emmanuelle_Da_Costa.avif"
 import photoNansDeJesus from "../../images/photos/Nans_De_Jesus.avif"
+import photoNansDeJesusDefaut from "../../images/photos/Nans_De_Jesus.avif"
 import photoFilipeRodriguez from "../../images/photos/Filipe_Rodriguez.avif"
+import photoFilipeRodriguezDefaut from "../../images/photos/Filipe_Rodriguez.avif"
 import photoInconnue from "../../images/logo/image_par_defaut.jpg"
 
 const StyleNavigationReduit = styled.header`
@@ -44,6 +47,7 @@ export default function Compositeurs() {
                 <h1>Les compositeurs</h1>
                 <Carte
                     photo={photoEmmanuelleDaCosta}
+                    photoDefaut={photoEmmanuelleDaCostaDefaut}
                     nom="Emmanuelle Da Costa"
                     biographie={[
                         "Les échanges et collaborations avec les interprètes ont nourri l'écriture instrumentale et vocale d'Emmanuelle Da Costa, de même que les interactions de sa musique avec d'autres arts : aujourd'hui, elle s'intéresse particulièrement au spectacle vivant, et privilégie la rencontre avec d'autres créateurs : écrivains, performers, comédiens, artistes plasticiens, danseurs…",
@@ -53,6 +57,7 @@ export default function Compositeurs() {
                 />
                 <Carte
                     photo={photoNansDeJesus}
+                    photoDefaut={photoNansDeJesusDefaut}
                     nom="Nans de Jesus"
                     biographie={[
                         "Compositeur aux multiples influences, Nans de Jesus s'est formé à diverses écoles : guitare flamenca, chanson, chant choral, musiques électroniques. Fasciné par les différentes expressions de la voix, des traditions vocales méditerranéennes aux harmonies du chant choral, par les musiques du XXème siècle et par l'arrivée de la synthèse sonore, il explore aujourd'hui diverses champs de compositions. La majorité de son travail se dirige vers l'image (courts métrages et jeux vidéos) où la musique électronique, le design sonore et l'expression vocale prennent une place centrale. Il réserve une partie de son travail à l'écriture chorale dans laquelle il livre une musique aux textures intenses et aux couleurs vives.",
@@ -60,6 +65,7 @@ export default function Compositeurs() {
                 />
                 <Carte
                     photo={photoFilipeRodriguez}
+                    photoDefaut={photoFilipeRodriguezDefaut}
                     nom="Filipe Rodriguez"
                     biographie={[
                         "Filipe Rodriguez (1995) est un musicien suisse qui découvre la musique classique par le piano suivi de l'orgue à Payerne. Imprégné de l'art choral helvétique, il dirige, chante puis il suit ses premiers cours de composition en 2017 auprès du compositeur et organiste Valentin Villard. En 2019, Filipe est certifié facteur de pianos (réparateur et accordeur) à Lausanne et est admis au \"Conservatoire National Supérieur de Musique et Danse\" de Lyon (CNSMD) dans la classe de composition de David Chappuis.",
@@ -68,11 +74,13 @@ export default function Compositeurs() {
                 />
                 <Carte
                     photo={photoInconnue}
+                    photoDefaut={photoInconnue}
                     nom="Mathieu Bolcato"
                     biographie={[""]}
                 />
                 <Carte
                     photo={photoInconnue}
+                    photoDefaut={photoInconnue}
                     nom="Eric Lebrun"
                     biographie={[""]}
                 />

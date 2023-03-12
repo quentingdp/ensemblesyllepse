@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/entrelacs.avif"
+import photoConcertDefaut from "../../images/photos/entrelacs.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -114,6 +115,7 @@ export default function Entrelacs() {
                 ]}
                 programme={progEntrelacs}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Concert Entrelacs à Tours"
             />
             <PiedDePage />

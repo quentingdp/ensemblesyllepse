@@ -15,6 +15,7 @@ import brochurePdfMasterclass from "../content/Masterclass-Direction-de-Choeur-2
 import logoSyllepse from "../images/logo/LogoSyllepseEnsembleVocal_blanc.png"
 import photoPageAccueil from "../images/photos/IMG-20220419-WA0004.avif"
 import photoDescriptionQuestSyllepse from "../images/photos/DSCF1280.avif"
+import photoDescriptionQuestSyllepseDefaut from "../images/photos/DSCF1280.jpg"
 import logoCreditMutuel from "../images/logo/logo-part-credit-mutuel-enseignant.png"
 import logoSaintFons from "../images/logo/logo-part-saint-fons.png"
 import logoPassCulture from "../images/logo/logo-part-pass-culture.png"
@@ -241,10 +242,13 @@ export default function Accueil() {
                         </ul>
                     </article>
                     <div className="deux-colonnes-visuel">
-                        <img
-                            src={photoDescriptionQuestSyllepse}
-                            alt="Concert de Syllepse"
-                        />
+                        <picture>
+                            <source srcSet={photoDescriptionQuestSyllepse} />
+                            <img
+                                src={photoDescriptionQuestSyllepseDefaut}
+                                alt="Concert de Syllepse"
+                            />
+                        </picture>
                     </div>
                 </div>
                 <article className="presentation-texte">

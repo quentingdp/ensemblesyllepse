@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/DSCF1280.avif"
+import photoConcertDefaut from "../../images/photos/DSCF1280.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -111,6 +112,7 @@ export default function ShakespearesSongs() {
                 ]}
                 programme={progShakespearesSongs}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Concert Shakespeare's songs"
             />
             <PiedDePage />

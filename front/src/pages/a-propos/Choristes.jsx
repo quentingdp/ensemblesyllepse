@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoChoristes from "../../images/photos/photo_Syllepse_2.avif"
+import photoChoristesDefaut from "../../images/photos/photo_Syllepse_2.jpg"
 import { choristes } from "../../data/choristes.js"
 
 const StyleNavigationReduit = styled.header`
@@ -67,7 +68,13 @@ export default function Choristes() {
                         </article>
                     )
                 })}
-                <img src={photoChoristes} alt="Les choristes de Syllepse" />
+                <picture>
+                    <source srcSet={photoChoristes} />
+                    <img
+                        src={photoChoristesDefaut}
+                        alt="Les choristes de Syllepse"
+                    />
+                </picture>
             </StyleChoristes>
             <PiedDePage />
         </React.Fragment>

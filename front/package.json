@@ -12,9 +12,11 @@
         "react-helmet": "^6.1.0",
         "react-player": "^2.11.0",
         "react-router-dom": "^6.6.1",
-        "react-scripts": "5.0.1",
         "styled-components": "^5.3.6",
         "web-vitals": "^2.1.4"
+    },
+    "devDependencies": {
+        "react-scripts": "^5.0.1"
     },
     "scripts": {
         "start": "react-scripts start",

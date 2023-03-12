@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Miroir.avif"
+import photoConcertDefaut from "../../images/photos/Miroir.avif"
 
 const StyleNavigationReduit = styled.header`
     position: sticky;
@@ -107,6 +108,7 @@ export default function Miroir() {
                 ]}
                 programme={progMiroir}
                 image={photoConcert}
+                imageDefaut={photoConcertDefaut}
                 alt="Programme Miroir"
             />
             <PiedDePage />

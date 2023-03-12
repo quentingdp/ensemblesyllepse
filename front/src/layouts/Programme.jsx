@@ -36,8 +36,14 @@ export const StyleProgramme = styled.main`
         width: 35%;
     }
 
-    img {
+    picture {
         width: 65%;
+    }
+
+    img {
+        width: 100%;
+        height: 800px;
+        margin-top: 50px;
         object-fit: cover;
     }
 
@@ -78,8 +84,13 @@ export const StyleProgramme = styled.main`
             width: 100%;
         }
 
-        img {
+        picture {
             width: 100%;
+        }
+
+        img {
+            height: unset;
+            margin-top: unset;
         }
     }
 `
@@ -90,6 +101,7 @@ export default function Programme({
     introduction,
     programme,
     image,
+    imageDefaut,
     alt,
 }) {
     return (
@@ -139,7 +151,10 @@ export default function Programme({
                     )
                 })}
             </article>
-            <img src={image} alt={alt} />
+            <picture>
+                <source srcSet={image} />
+                <img src={imageDefaut} alt={alt} />
+            </picture>
             <h2>Concerts à venir</h2>
             {concertsProgrammeAVenir(concerts, titre).length === 0 ? (
                 <p className="absence-concert">Pas de date prévue</p>
