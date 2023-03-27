@@ -23,6 +23,12 @@ import logoPrefetAura from "../images/logo/logo-part-prefet-aura.png"
 import logoCentreDeLaVoix from "../images/logo/logo-part-centre-de-la-voix.png"
 import logoSacem from "../images/logo/logo-part-sacem.png"
 import logoFondationCestVousLavenir from "../images/logo/logo-part-fondation-cest-vous-lavenir.png"
+import logoAdami from "../images/logo/logo-adami.png"
+import logoCiteDeLaVoix from "../images/logo/logo-cite-de-la-voix.png"
+import logoEcoleDeMusiqueVenissieux from "../images/logo/logo-ecole-de-musique-venissieux.png"
+import logoPrintempsDesArts from "../images/logo/logo-printemps-des-arts.png"
+import logoSpedidam from "../images/logo/logo-spedidam.png"
+import logoVilleDeVenissieux from "../images/logo/logo-ville-de-venissieux.png"
 
 const StyleEnteteAccueil = styled.header`
     display: flex;
@@ -307,6 +313,21 @@ export default function Accueil() {
                         <img
                             src={logoFondationCestVousLavenir}
                             alt="Fondation C'est vous l'avenir"
+                        />
+                        <img src={logoAdami} alt="Adami" />
+                        <img src={logoCiteDeLaVoix} alt="Cité de la Voix" />
+                        <img
+                            src={logoEcoleDeMusiqueVenissieux}
+                            alt="Ecole de Musique de Vénissieux"
+                        />
+                        <img
+                            src={logoPrintempsDesArts}
+                            alt="Printemps des Arts"
+                        />
+                        <img src={logoSpedidam} alt="Spedidam" />
+                        <img
+                            src={logoVilleDeVenissieux}
+                            alt="Ville de Vénissieux"
                         />
                     </div>
                 </div>
