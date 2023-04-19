@@ -107,6 +107,7 @@ export default function ShakespearesSongs() {
             <Programme
                 titre="Shakespeare's songs"
                 annee="2021"
+                effectif="Programme pour 12 chanteurs et chef.fe de coeur"
                 introduction={[
                     "Centré sur les mélodieux vers de WILLIAM SHAKESPEARE, Syllepse vous propose un voyage éclectique et poétique dans le temps, en réunissant des compositeurs d'aujourd'hui inspirés de son œuvre et des compositeurs ayant vécu à l'époque shakespearienne : DOWLAND, WEELKES, PURCELL, BIRD, JOHN BULL, HAENDEL et MORLEY côtoient le répertoire moderne de MACFARREN, LINDBERG et MANTYJARVI.",
                 ]}

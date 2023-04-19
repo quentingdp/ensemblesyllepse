@@ -27,6 +27,13 @@ export const StyleProgramme = styled.main`
         letter-spacing: 1em;
     }
 
+    .complement {
+        width: 100%;
+        color: #e0c9aa;
+        font-size: 20px;
+        margin: 20px 0;
+    }
+
     .introduction {
         width: 100%;
         margin: 20px 0;
@@ -98,6 +105,7 @@ export const StyleProgramme = styled.main`
 export default function Programme({
     titre,
     annee,
+    effectif,
     introduction,
     programme,
     image,
@@ -108,6 +116,7 @@ export default function Programme({
         <StyleProgramme>
             <h1>{titre}</h1>
             <p className="sous-titre">{annee}</p>
+            <p className="complement">{effectif}</p>
             {introduction.map((paragraphe, index) => {
                 return (
                     <p key={`${index}`} className="introduction">
