@@ -85,6 +85,11 @@ export default function Navigation() {
                     <span className="menu-navigation-wrap-title">A propos</span>
                     <ul className="menu-navigation-wrap">
                         <li className="menu-navigation-wrap-option">
+                            <a href="/a-propos/l-ensemble-syllepse/">
+                                L'ensemble Syllepse
+                            </a>
+                        </li>
+                        <li className="menu-navigation-wrap-option">
                             <a href="/a-propos/ophelia-besson/">
                                 Ophélia Besson
                             </a>
