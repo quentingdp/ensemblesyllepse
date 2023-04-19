@@ -67,7 +67,9 @@ export default function Contributeurs() {
                     photo={photoBenoitMorros}
                     photoDefaut={photoBenoitMorrosDefaut}
                     nom="Benoit Morros"
-                    biographie={["Benoit MORROS, Photos et prises de sons"]}
+                    biographie={[
+                        "Chanteur Lyrique soliste, Benoit Morros s'occupe pour l'ensemble Syllepse de la prise de son, de la régie lumière sur les programmes mis en scène, en supplément de son investissement dans l'association.",
+                    ]}
                 />
                 <h2>Création des visuels pour les concerts</h2>
                 <Carte
