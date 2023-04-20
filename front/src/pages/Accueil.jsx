@@ -8,8 +8,10 @@ import PiedDePage from "../components/PiedDePage"
 import Navigation from "../components/Navigation"
 import Concert from "../components/Concert"
 import { concerts } from "../data/concerts.js"
-import { prochainConcert } from "../functions/triFiltreConcerts.js"
-import brochurePdfMasterclass from "../content/Masterclass-Direction-de-Choeur-2023-Syllepse.pdf"
+import {
+    prochainConcert,
+    deuxiemeProchainConcert,
+} from "../functions/triFiltreConcerts.js"
 import logoSyllepse from "../images/logo/LogoSyllepseEnsembleVocal_blanc.png"
 import photoPageAccueil from "../images/photos/IMG-20220419-WA0004.avif"
 import logoCreditMutuel from "../images/logo/logo-part-credit-mutuel-enseignant.png"
@@ -49,6 +51,7 @@ export const StyleAccueil = styled.main`
     max-width: 1440px;
     min-height: 80vh;
     margin: auto;
+    text-align: center;
 
     .sous-titre {
         text-transform: uppercase;
@@ -67,11 +70,6 @@ export const StyleAccueil = styled.main`
             margin: 15px 0px;
             text-align: center;
         }
-    }
-
-    .lien-dans-paragraphe {
-        text-decoration: underline;
-        font-size: 22px;
     }
 
     .gallerie-logos {
@@ -111,29 +109,13 @@ export default function Accueil() {
                         "prendre ensemble, comprendre, embrasser"
                     </p>
                 </div>
-                <article className="presentation-texte">
-                    <h2>Masterclass de direction de choeur</h2>
-                    <p className="presentation-texte-description">
-                        En avril 2023, l'Ensemble Vocal Syllepse propose de
-                        suivre une Masterclass de direction de choeur. Pour
-                        s'inscrire et voir plus de détails sur le programme de
-                        cette Masterclass, n'hésitez pas à télécharger et nous
-                        renvoyer la brochure ci-dessous.
-                    </p>
-                    <p>
-                        <a
-                            className="lien-dans-paragraphe"
-                            href={brochurePdfMasterclass}
-                        >
-                            Brochure de participation à la Masterclass de
-                            direction de choeur
-                        </a>
-                    </p>
-                </article>
-                {prochainConcert(concerts).hasOwnProperty("programme") ? (
+                {deuxiemeProchainConcert(concerts).hasOwnProperty(
+                    "programme"
+                ) ? (
                     <article className="presentation-texte">
-                        <h2>Notre prochain concert</h2>
+                        <h2>Nos prochains concerts</h2>
                         <Concert concert={prochainConcert(concerts)} />
+                        <Concert concert={deuxiemeProchainConcert(concerts)} />
                     </article>
                 ) : null}
                 <div className="presentation-texte">

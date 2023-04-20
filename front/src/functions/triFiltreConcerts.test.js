@@ -3,6 +3,7 @@ import {
     concertsPasses,
     concertsProgrammeAVenir,
     prochainConcert,
+    deuxiemeProchainConcert,
 } from "./triFiltreConcerts.js"
 
 const concerts = [
@@ -137,6 +138,21 @@ describe("La fonction prochainConcert", () => {
     })
     test("renvoie un objet vide s'il n'y a aucun prochain concert", () => {
         const result = prochainConcert(concertsTousTermines)
+        expect(result).toEqual({})
+    })
+})
+
+describe("La fonction deuxiemeProchainConcert", () => {
+    test("renvoie bien le deuxième concert existant", () => {
+        const result = deuxiemeProchainConcert(concerts)
+        expect(result).toEqual({
+            programme: "Programme futur plus proche dans le temps",
+            date: "2701-06-15T12:12:00.000",
+            lieu: [],
+        })
+    })
+    test("renvoie un objet vide s'il n'y a aucun deuxième prochain concert", () => {
+        const result = deuxiemeProchainConcert(concertsTousTermines)
         expect(result).toEqual({})
     })
 })

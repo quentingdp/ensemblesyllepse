@@ -11,7 +11,7 @@ export const StyleConcert = styled.article`
     border: 2px solid white;
     border-radius: 10px;
     padding: 5px;
-    margin: 40px 0;
+    margin: 25px 0;
     width: 100%;
     align-items: center;
     text-align: center;

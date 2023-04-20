@@ -63,6 +63,20 @@ export const prochainConcert = (concerts) => {
 }
 
 /**
+ * Fonction qui renvoie le deuxième prochain concert uniquement. Se base sur la fonction concertsAVenir pour réutiliser le code existant, puis prend la deuxième valeur si elle existe
+ * @param {*} concerts
+ * @returns
+ */
+export const deuxiemeProchainConcert = (concerts) => {
+    const prochainsConcerts = concertsAVenir(concerts)
+    if (prochainsConcerts.length < 2) {
+        return {}
+    } else {
+        return prochainsConcerts[1]
+    }
+}
+
+/**
  * Fonction qui parcours le tableau des concerts et renvoie un tableau des concerts du programme donné en argument trié par date croissante, en filtrant ceux qui sont plus dans le futur que la semaine dernière
  * @param {*} concerts
  * @param {*} programme
