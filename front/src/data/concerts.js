@@ -35,11 +35,25 @@ export const concerts = [
     },
     {
         programme: "Ombres",
-        date: "2023-02-12T17:00:00.000",
+        date: "2023-07-25T21:00:00.000",
         lieu: [
-            "Église du Rosaire",
-            "4 place Roger Salengro",
-            "69190 SAINT-FONS",
+            "Cathédrale Notre-Dame de Nazareth",
+            "Esplanade Yves Meffre",
+            "84110 VAISON-LA-ROMAINE",
+        ],
+    },
+    {
+        programme: "Ombres",
+        date: "2023-07-27T21:00:00.000",
+        lieu: ["Église Saint Vincent", "Rue de la Résistance", "26110 NYONS"],
+    },
+    {
+        programme: "Ombres",
+        date: "2023-07-28T21:00:00.000",
+        lieu: [
+            "Cathédrale Saint Apollinaire",
+            "Place des Ormeaux",
+            "26000 VALENCE",
         ],
     },
 ]
