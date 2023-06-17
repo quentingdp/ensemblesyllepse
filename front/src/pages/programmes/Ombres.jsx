@@ -1,6 +1,5 @@
 //Import de librairies externes
 import React from "react"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -9,11 +8,6 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Ombres.avif"
 import photoConcertDefaut from "../../images/photos/Ombres.avif"
-
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
 
 const progOmbres = [
     {
@@ -114,9 +108,7 @@ const progOmbres = [
 export default function Ombres() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <Helmet>
                 <title>Ensemble Syllepse - Ombres</title>
                 <meta
@@ -127,7 +119,7 @@ export default function Ombres() {
             <Programme
                 titre="Ombres"
                 annee="2023"
-                effectif="Programme pour 18 chanteurs, 2 danseurs et chef.fe de coeur"
+                effectif="Programme pour 18 chanteurs, 2 danseurs et chef.fe de chœur"
                 introduction={[
                     "Le spectacle OMBRES est une création artistique qui réunit 18 choristes et 2 danseurs (JADE LOGMO et RAUL GABRIEL CALIN), empruntant au répertoire des musiques anciennes et contemporaines. Ce spectacle, pensé comme un théâtre d'ombres, est un métissage entre la danse, la scénographie et la musique.",
                     "La mise en scène de JEAN LACORNERIE s'articulant autour d'un immense rideau de fil au centre de la scène permettra aux artistes d'être tour à tour personnages, ombres, récits et décors. 2 danseurs apparaissent, disparaissent et interagissent avec les chanteurs. La création lumière de BENOIT MORROS donnera vie aux ombres des musiciens.",

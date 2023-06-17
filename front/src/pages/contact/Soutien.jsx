@@ -8,11 +8,6 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import logoHelloasso from "../../images/logo/logo-helloasso.png"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleSoutien = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -37,9 +32,7 @@ export const StyleSoutien = styled.main`
 export default function Soutien() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleSoutien>
                 <Helmet>
                     <title>Ensemble Syllepse - Nous soutenir</title>

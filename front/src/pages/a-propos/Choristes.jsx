@@ -10,11 +10,6 @@ import photoChoristes from "../../images/photos/photo_Syllepse_2.avif"
 import photoChoristesDefaut from "../../images/photos/photo_Syllepse_2.jpg"
 import { choristes } from "../../data/choristes.js"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleChoristes = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -46,9 +41,7 @@ export const StyleChoristes = styled.main`
 export default function Choristes() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleChoristes>
                 <Helmet>
                     <title>Ensemble Syllepse - Les choristes</title>

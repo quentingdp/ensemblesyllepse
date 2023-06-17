@@ -1,6 +1,5 @@
 //Import de librairies externes
 import React from "react"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -9,11 +8,6 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Nuits.avif"
 import photoConcertDefaut from "../../images/photos/Nuits.avif"
-
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
 
 const progNuits = [
     {
@@ -103,9 +97,7 @@ const progNuits = [
 export default function Nuits() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <Helmet>
                 <title>Ensemble Syllepse - Nuits</title>
                 <meta
@@ -116,7 +108,7 @@ export default function Nuits() {
             <Programme
                 titre="Nuits - Conte musical"
                 annee="2021"
-                effectif="Programme pour 17 chanteurs, 2 comédiens et chef.fe de coeur"
+                effectif="Programme pour 17 chanteurs, 2 comédiens et chef.fe de chœur"
                 introduction={[
                     "NUITS est le produit d'une rencontre entre 19 chanteurs, 2 comédiens et le poète JEAN-A. MASSARD dont le texte accompagne les spectateurs dans ce conte musical. Le chœur, personnage à part entière est lui aussi mis en scène. De la tombée de la nuit jusqu'à l'aube, ce voyage lie intimement art choral, dramaturgie et poésie. Ce spectacle a déjà été donné deux fois dans le Rhône en novembre 2021. Près de 320 personnes ont assisté avec enthousiasme à cette création. En partenariat avec Classical B. Studio, Syllepse a enregistré et édité ce conte sous forme de Livre-CD, disponible sur toutes les plateformes de streaming depuis juin 2022",
                     "Nuits est une fantaisie en six veilles, que nous décrit l'auteur de ses textes : JEAN-A. MASSARD",

@@ -11,11 +11,6 @@ import { choristes } from "../../data/choristes.js"
 import photoDescriptionQuestSyllepse from "../../images/photos/DSCF1280.avif"
 import photoDescriptionQuestSyllepseDefaut from "../../images/photos/DSCF1280.jpg"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleEnsembleSyllepse = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -79,9 +74,7 @@ export const StyleEnsembleSyllepse = styled.main`
 export default function EnsembleSyllepse() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleEnsembleSyllepse>
                 <Helmet>
                     <title>

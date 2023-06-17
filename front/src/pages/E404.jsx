@@ -7,11 +7,6 @@ import { Helmet } from "react-helmet"
 import Navigation from "../components/Navigation"
 import PiedDePage from "../components/PiedDePage"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleE404 = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -31,9 +26,7 @@ export const StyleE404 = styled.main`
 export default function E404() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleE404>
                 <Helmet>
                     <title>Ensemble Syllepse - Page introuvable</title>

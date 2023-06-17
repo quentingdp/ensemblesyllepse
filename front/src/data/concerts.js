@@ -44,6 +44,11 @@ export const concerts = [
     },
     {
         programme: "Ombres",
+        date: "2023-07-26T20:30:00.000",
+        lieu: ["Église de Châteauneuf-du-Rhône", "Place de l'église", "26780 CHÂTEAUNEUF-DU-RHONE"],
+    },
+    {
+        programme: "Ombres",
         date: "2023-07-27T21:00:00.000",
         lieu: ["Église Saint Vincent", "Rue de la Résistance", "26110 NYONS"],
     },

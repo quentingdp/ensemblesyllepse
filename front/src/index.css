@@ -43,12 +43,15 @@ nav {
     text-transform: uppercase;
 }
 
-li {
-    list-style-type: none;
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
 a,
 a:active,
+a:hover,
 a:visited {
     color: unset;
     text-decoration: none;
@@ -56,6 +59,7 @@ a:visited {
 
 a:hover {
     color: red;
+    cursor: pointer;
 }
 
 input {

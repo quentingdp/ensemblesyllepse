@@ -1,6 +1,5 @@
 //Import de librairies externes
 import React from "react"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -9,11 +8,6 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/DSCF1280.avif"
 import photoConcertDefaut from "../../images/photos/DSCF1280.avif"
-
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
 
 const progShakespearesSongs = [
     {
@@ -82,7 +76,7 @@ const progShakespearesSongs = [
                 auteur: "Nils Lindberg (1933-)",
             },
             {
-                titre: "Choeurs finaux et air When I am Laid, in Didon et Énée",
+                titre: "Chœurs finaux et air When I am Laid, in Didon et Énée",
                 soliste:
                     "Soprano : Marilou Rolland, Clavecin : Claire Meusnier",
                 auteur: "Henry Purcell (1659-1695)",
@@ -94,9 +88,7 @@ const progShakespearesSongs = [
 export default function ShakespearesSongs() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <Helmet>
                 <title>Ensemble Syllepse - Shakespeare's songs</title>
                 <meta
@@ -107,7 +99,7 @@ export default function ShakespearesSongs() {
             <Programme
                 titre="Shakespeare's songs"
                 annee="2021"
-                effectif="Programme pour 12 chanteurs et chef.fe de coeur"
+                effectif="Programme pour 12 chanteurs et chef.fe de chœur"
                 introduction={[
                     "Centré sur les mélodieux vers de WILLIAM SHAKESPEARE, Syllepse vous propose un voyage éclectique et poétique dans le temps, en réunissant des compositeurs d'aujourd'hui inspirés de son œuvre et des compositeurs ayant vécu à l'époque shakespearienne : DOWLAND, WEELKES, PURCELL, BIRD, JOHN BULL, HAENDEL et MORLEY côtoient le répertoire moderne de MACFARREN, LINDBERG et MANTYJARVI.",
                 ]}

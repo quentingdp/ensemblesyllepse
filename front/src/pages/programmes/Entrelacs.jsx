@@ -1,6 +1,5 @@
 //Import de librairies externes
 import React from "react"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -9,11 +8,6 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/entrelacs.avif"
 import photoConcertDefaut from "../../images/photos/entrelacs.avif"
-
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
 
 const progEntrelacs = [
     {
@@ -97,9 +91,7 @@ const progEntrelacs = [
 export default function Entrelacs() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <Helmet>
                 <title>Ensemble Syllepse - Entrelacs</title>
                 <meta
@@ -110,7 +102,7 @@ export default function Entrelacs() {
             <Programme
                 titre="Entrelacs"
                 annee="2022"
-                effectif="Programme pour 16 chanteurs et chef.fe de coeur"
+                effectif="Programme pour 16 chanteurs et chef.fe de chœur"
                 introduction={[
                     "Une véritable mosaïque musicale à travers les styles et les époques. Quatre mini-concerts en un, appelant à la participation des spectateurs. Spectacle mis en scène et spatialisé par JEAN LACORNERIE, incluant deux créations d'ÉRIC LEBRUN et d'EMMANUELLE DA COSTA. Ce programme a été présenté avec succès entre février et juin 2022, notamment au Festival International de Nancy “Voix du monde” puis au Festival International du Florilège Vocal de Tours.",
                 ]}

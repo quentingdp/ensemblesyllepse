@@ -1,6 +1,5 @@
 //Import de librairies externes
 import React from "react"
-import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -9,11 +8,6 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Miroir.avif"
 import photoConcertDefaut from "../../images/photos/Miroir.avif"
-
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
 
 const progMiroir = [
     {
@@ -86,9 +80,7 @@ const progMiroir = [
 export default function Miroir() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <Helmet>
                 <title>Ensemble Syllepse - Miroir</title>
                 <meta
@@ -99,7 +91,7 @@ export default function Miroir() {
             <Programme
                 titre="Miroir"
                 annee="2023"
-                effectif="Programme pour 10 chanteurs et chef.fe de coeur"
+                effectif="Programme pour 10 chanteurs et chef.fe de chœur"
                 introduction={[
                     "Sélectionné par la Cité de la Voix pour participer aux résidences estivales destinées aux jeunes ensembles professionnels, l'Ensemble Vocal Syllepse présentera en juillet 2023 un programme mêlant musique de la renaissance et musique contemporaine.",
                     "Musique de la Renaissance : 20’",

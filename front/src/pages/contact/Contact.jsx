@@ -9,11 +9,6 @@ import PiedDePage from "../../components/PiedDePage"
 import logoFacebook from "../../images/logo/logo-facebook.png"
 import logoInstagram from "../../images/logo/logo-instagram.png"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleContact = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -45,9 +40,7 @@ export const StyleContact = styled.main`
 export default function Contact() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleContact>
                 <Helmet>
                     <title>Ensemble Syllepse - Nous contacter</title>

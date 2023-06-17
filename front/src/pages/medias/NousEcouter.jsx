@@ -12,11 +12,6 @@ import logoDeezer from "../../images/logo/Deezer_White.png"
 import logoSpotify from "../../images/logo/Spotify_Green.png"
 import logoYoutube from "../../images/logo/Youtube_White.png"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleNousEcouter = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -79,9 +74,7 @@ export const StyleNousEcouter = styled.main`
 export default function NousEcouter() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleNousEcouter>
                 <Helmet>
                     <title>Ensemble Syllepse - Nous écouter</title>
@@ -92,7 +85,7 @@ export default function NousEcouter() {
                 </Helmet>
                 <h1>Pour nous écouter :</h1>
                 <p>
-                    Vous pouvez retrouver nos oeuvres sur les plateformes de
+                    Vous pouvez retrouver nos œuvres sur les plateformes de
                     streaming suivantes, qui sont également disponible via le{" "}
                     <a
                         className="lien-linktree"

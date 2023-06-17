@@ -16,11 +16,6 @@ import photoQuentinGuillonDefaut from "../../images/photos/Quentin_Guillon_de_Pr
 import photoSarahBordes from "../../images/photos/Sarah_Bordes.avif"
 import photoSarahBordesDefaut from "../../images/photos/Sarah_Bordes.jpg"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleContributeurs = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -38,9 +33,7 @@ export const StyleContributeurs = styled.main`
 export default function Contributeurs() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleContributeurs>
                 <Helmet>
                     <title>Ensemble Syllepse - Les contributeurs</title>

@@ -8,11 +8,6 @@ import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoOphelia from "../../images/photos/DSCF1169.avif"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleOpheliaBesson = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -56,15 +51,13 @@ export const StyleOpheliaBesson = styled.main`
 export default function OpheliaBesson() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleOpheliaBesson>
                 <Helmet>
                     <title>Ensemble Syllepse - Ophélia Besson</title>
                     <meta
                         name="description"
-                        content="A propos de l'Ensemble Syllepse, présentons Ophélia Besson, la cheffe de coeur et directrice artistique de l'ensemble."
+                        content="A propos de l'Ensemble Syllepse, présentons Ophélia Besson, la cheffe de chœur et directrice artistique de l'ensemble."
                     />
                 </Helmet>
                 <div className="titre">
@@ -86,7 +79,7 @@ export default function OpheliaBesson() {
                         Certificat d'Études Musicales de Piano et d'Écriture.
                     </p>
                     <p className="presentation-description">
-                        Depuis le début de ses études de direction de choeur,
+                        Depuis le début de ses études de direction de chœur,
                         Ophélia a eu l'opportunité d'étudier auprès de Lionel
                         Sow, Roland Hayrabedian, Nicole Corti, Régine
                         Théodoresco, Geoffroy Jourdain, Christophe Grapperon,
@@ -135,9 +128,9 @@ export default function OpheliaBesson() {
                     <p className="presentation-description">
                         Au cours de la saison 2023, Ophélia a été retenue par
                         les Centres Nationaux d'Art Vocal pour participer à
-                        l'académie itinérante de direction de Choeur auprès de
+                        l'académie itinérante de direction de Chœur auprès de
                         Musicatreize, Spirito, Les Éléments, Accentus et le
-                        Jeune Choeur de Paris.
+                        Jeune Chœur de Paris.
                     </p>
                 </article>
             </StyleOpheliaBesson>

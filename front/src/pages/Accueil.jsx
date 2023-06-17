@@ -28,12 +28,11 @@ import logoPrintempsDesArts from "../images/logo/logo-printemps-des-arts.png"
 import logoSpedidam from "../images/logo/logo-spedidam.png"
 import logoVilleDeVenissieux from "../images/logo/logo-ville-de-venissieux.png"
 
-const StyleEnteteAccueil = styled.header`
+export const StyleCover = styled.div`
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    height: 95vh;
     background-image: url(${photoPageAccueil});
     background-position: center;
     background-repeat: no-repeat;
@@ -87,14 +86,14 @@ export const StyleAccueil = styled.main`
 export default function Accueil() {
     return (
         <React.Fragment>
-            <StyleEnteteAccueil>
+            <Navigation />
+            <StyleCover>
                 <img
                     className="menu-logo"
                     src={logoSyllepse}
                     alt="Logo Ensemble Syllepse"
                 />
-            </StyleEnteteAccueil>
-            <Navigation />
+            </StyleCover>
             <StyleAccueil>
                 <Helmet>
                     <title>Ensemble Syllepse</title>

@@ -1,176 +1,150 @@
 //Import de librairies externes
 import styled from "styled-components"
+import { useState, useEffect } from "react"
 
-export const StyleNavigation = styled.nav`
+//Dépendences internes
+import IconeSyllepse from "../images/logo/IconeSyllepseEnsembleVocal.png"
+import IconeCollapse from "../images/logo/iconCollapse.png"
+import NavSousMenu from "./NavSousMenu.jsx"
+import { navLiens } from "../data/navLiens.js"
+
+export const StyleNavigation = styled.header`
     position: sticky;
-    top: 0px;
-    width: 100%;
-    min-height: 5vh;
-    padding-bottom: 5px;
+    top: 0;
     background-color: white;
     color: black;
+    width: 100vw;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-between;
 
-    .menu-navigation {
-        &-list {
-            max-width: 2000px;
-            width: 95%;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-        }
-
-        &-option {
-            margin: 0px 10px;
-            padding: 5px 0px;
-            text-align: center;
-            height: 20px;
-            width: 12%;
-        }
+    .logo {
+        margin: 0.2rem 0.5rem;
     }
 
-    .menu-navigation-wrap {
-        background-color: white;
-        border: 1px solid black;
-        overflow: hidden;
-        transform: scale(0);
-        transform-origin: top;
-        transition: transform 200ms ease-in-out;
-        width: 230px;
 
-        &-title {
-            text-align: center;
-
-            &:hover {
-                color: red;
-                cursor: pointer;
-            }
-        }
-
-        &-option {
-            margin: 5px 10px;
-            text-align: left;
-        }
+    .toggler {
+        cursor: pointer;
     }
 
-    .wrap:hover {
-        & > .menu-navigation-wrap {
-            transform: scale(1);
-        }
+    .collapse-icon {
+        height: 2.5rem;
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
-        .menu-navigation-option {
-            width: 23%;
-        }
+    .main-navbar {
+        width: 90%;
+    }
+
+    .navbar-0 {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navbar-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        background-color: rgb(221, 221, 221);
+    }
+
+    .nav-item {
+        padding: 1.5rem 1rem;
+    }
+
+    .nav-item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .nav-item:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+    .focused {
+        background-color: rgb(221, 221, 221);
     }
 
     @media (max-width: 768px) {
-        .menu-navigation-option {
-            width: 45%;
+        flex-direction: column;
+
+        .main-navbar {
+            width: 100%;
+        }
+    
+        .navbar-0 {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .navbar-1 {
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    
+        .nav-item {
+            padding: 1rem 0.5rem;
+        }
+
+        .focused {
+            background-color: unset;
         }
     }
 `
 
 export default function Navigation() {
+    let [toggle, setToggle] = useState(false)
+    let [navStatus, setNavStatus] = useState(-1)
+    let [width, setWidth] = useState(window.innerWidth)
+    let mobileBreakpoint = 768
+    let isMobile = width <= mobileBreakpoint
+
+    const changeNavStatus = (navKey) => {
+        if (navKey === navStatus) {
+            setNavStatus(-1)
+        } else {
+            setNavStatus(navKey)
+        }
+    }
+
+    useEffect(() => {
+        window.addEventListener('resize', () => setWidth(window.innerWidth))
+        return () => window.removeEventListener('resize', () => setWidth(window.innerWidth))
+    }, [width])
+
     return (
         <StyleNavigation>
-            <ul className="menu-navigation-list">
-                <li className="menu-navigation-option page-accueil">
-                    <a href="/">Accueil</a>
-                </li>
-                <li className="menu-navigation-option wrap">
-                    <span className="menu-navigation-wrap-title">A propos</span>
-                    <ul className="menu-navigation-wrap">
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/l-ensemble-syllepse/">
-                                L'ensemble Syllepse
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/ophelia-besson/">
-                                Ophélia Besson
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/choristes/">Les choristes</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/compositeurs/">
-                                Les compositeurs
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/association/">L'association</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/a-propos/contributeurs/">
-                                Les contributeurs
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li className="menu-navigation-option">
-                    <a href="/agenda/">Agenda</a>
-                </li>
-                <li className="menu-navigation-option wrap">
-                    <span className="menu-navigation-wrap-title">
-                        Programmes
-                    </span>
-                    <ul className="menu-navigation-wrap">
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2021-shakespeare-s-songs/">
-                                Shakespeare's songs
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2021-nuits/">Nuits</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2022-entrelacs/">Entrelacs</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2022-chants-et-poesies/">
-                                Chants et poésies
-                            </a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2023-ombres/">Ombres</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2023-miroir/">Miroir</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/programmes/2022-kaleidoscope/">
-                                Kaléidoscope
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li className="menu-navigation-option wrap">
-                    <span className="menu-navigation-wrap-title">Médias</span>
-                    <ul className="menu-navigation-wrap">
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/medias/nous-ecouter/">Nous écouter</a>
-                        </li>
-                    </ul>
-                </li>
-                <li className="menu-navigation-option wrap">
-                    <span className="menu-navigation-wrap-title">Contact</span>
-                    <ul className="menu-navigation-wrap">
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/contact/nous-soutenir/">Nous soutenir</a>
-                        </li>
-                        <li className="menu-navigation-wrap-option">
-                            <a href="/contact/nous-contacter/">
-                                Nous contacter
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+            {!isMobile ? <a className="logo display-desktop" href="/">
+                <img className="img-fluid" src={IconeSyllepse} alt="Syllepse" />
+            </a> : null}
+            {isMobile ? <div className="toggler" onClick={() => { setToggle(!toggle); setNavStatus(-1) }}>
+                <img className="collapse-icon" src={IconeCollapse} alt="Déployer" />
+            </div> : null}
+            {(!isMobile || toggle) ? <nav className="main-navbar">
+                <ul className="navbar-0">
+                    {navLiens.map((e, index) => {
+                        if (e.hasOwnProperty('sousLiens')) {
+                            return (
+                                (!isMobile || navStatus === -1 || navStatus === index) ? <li key={`${index}`} className={navStatus === index ? "nav-item focused" : "nav-item"} onClick={() => changeNavStatus(index)}><span className="toggle-link">{e.label}</span></li> : null
+                            )
+                        } else {
+                            return (
+                                (!isMobile || navStatus === -1 || navStatus === index) ? <li key={`${index}`} className="nav-item" onClick={() => changeNavStatus(index)}><a href={e.lien}>{e.label}</a></li> : null
+                            )
+                        }   
+                    })}
+                </ul>
+                {navLiens.map((e, index) => {
+                    return (
+                        (e.hasOwnProperty('sousLiens') && navStatus === index) ? <NavSousMenu key={`${index}`} tableauLiens={e.sousLiens} /> : null
+                    )
+                })}
+            </nav> : null}
         </StyleNavigation>
     )
 }

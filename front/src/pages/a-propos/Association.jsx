@@ -18,11 +18,6 @@ import photoDewyBessonDefaut from "../../images/photos/Dewy_Besson.jpg"
 import photoIsabellePoirierCoutansais from "../../images/photos/Isabelle_Poirier-Coutansais.avif"
 import photoIsabellePoirierCoutansaisDefaut from "../../images/photos/Isabelle_Poirier-Coutansais.jpg"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleAssociation = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -36,9 +31,7 @@ export const StyleAssociation = styled.main`
 export default function Association() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleAssociation>
                 <Helmet>
                     <title>Ensemble Syllepse - L'association</title>

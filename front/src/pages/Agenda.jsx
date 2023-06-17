@@ -13,11 +13,6 @@ import {
     concertsPasses,
 } from "../functions/triFiltreConcerts.js"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleAgenda = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -46,9 +41,7 @@ export const StyleAgenda = styled.main`
 export default function Agenda() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleAgenda>
                 <Helmet>
                     <title>Ensemble Syllepse - Agenda</title>

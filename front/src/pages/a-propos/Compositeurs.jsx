@@ -14,11 +14,6 @@ import photoNansDeJesusDefaut from "../../images/photos/Nans_De_Jesus.avif"
 import photoFilipeRodriguez from "../../images/photos/Filipe_Rodriguez.avif"
 import photoFilipeRodriguezDefaut from "../../images/photos/Filipe_Rodriguez.avif"
 
-const StyleNavigationReduit = styled.header`
-    position: sticky;
-    top: 0px;
-`
-
 export const StyleCompositeurs = styled.main`
     padding: 15px;
     max-width: 1440px;
@@ -32,9 +27,7 @@ export const StyleCompositeurs = styled.main`
 export default function Compositeurs() {
     return (
         <React.Fragment>
-            <StyleNavigationReduit>
-                <Navigation />
-            </StyleNavigationReduit>
+            <Navigation />
             <StyleCompositeurs>
                 <Helmet>
                     <title>Ensemble Syllepse - Les compositeurs</title>
