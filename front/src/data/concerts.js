@@ -61,4 +61,130 @@ export const concerts = [
             "26000 VALENCE",
         ],
     },
+    {
+        programme: "Miroir",
+        date: "2023-07-11T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-11T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-12T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-12T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-13T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-13T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-14T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-14T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-15T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-15T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-16T16:00:00.000",
+        lieu: [
+            "Basilique Sainte-Marie-Madelaine",
+            "Rue des poichots",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2023-07-16T17:00:00.000",
+        lieu: [
+            "Cité de la voix",
+            "4 rue de l'hôpital",
+            "89450 VÉZELAY",
+        ],
+    },
+    {
+        programme: "Ombres",
+        date: "2023-09-17T17:00:00.000",
+        lieu: [
+            "Auditorium",
+            "Place André Poutissou",
+            "69400 VILLEFRANCHE-SUR-SAÔNE",
+        ],
+    },
+    {
+        programme: "Ombres",
+        date: "2023-09-18T14:30:00.000",
+        lieu: [
+            "Auditorium",
+            "Place André Poutissou",
+            "69400 VILLEFRANCHE-SUR-SAÔNE",
+        ],
+    },
 ]
