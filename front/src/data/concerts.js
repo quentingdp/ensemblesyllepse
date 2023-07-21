@@ -174,7 +174,7 @@ export const concerts = [
         date: "2023-09-17T17:00:00.000",
         lieu: [
             "Auditorium",
-            "Place André Poutissou",
+            "96 rue de la Sous-Préfecture",
             "69400 VILLEFRANCHE-SUR-SAÔNE",
         ],
     },
@@ -183,7 +183,7 @@ export const concerts = [
         date: "2023-09-18T14:30:00.000",
         lieu: [
             "Auditorium",
-            "Place André Poutissou",
+            "96 rue de la Sous-Préfecture",
             "69400 VILLEFRANCHE-SUR-SAÔNE",
         ],
     },
