@@ -118,12 +118,20 @@ export default function NousEcouter() {
                         </a>
                     </li>
                 </ul>
-                <h2>Teaser</h2>
+                <h2>Teasers</h2>
                 <div className="youtube-encapsule">
                     <ReactPlayer
                         width="100%"
                         height="100%"
                         url="https://youtu.be/53pSVlkeBfM"
+                        controls="true"
+                    />
+                </div>
+                <div className="youtube-encapsule">
+                    <ReactPlayer
+                        width="100%"
+                        height="100%"
+                        url="https://youtu.be/RL7P4vaCZ9k"
                         controls="true"
                     />
                 </div>

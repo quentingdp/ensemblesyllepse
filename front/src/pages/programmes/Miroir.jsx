@@ -1,5 +1,7 @@
 //Import de librairies externes
 import React from "react"
+import ReactPlayer from "react-player/youtube"
+import styled from "styled-components"
 import { Helmet } from "react-helmet"
 
 //Dépendences internes
@@ -8,6 +10,19 @@ import PiedDePage from "../../components/PiedDePage"
 import Programme from "../../layouts/Programme"
 import photoConcert from "../../images/photos/Miroir.avif"
 import photoConcertDefaut from "../../images/photos/Miroir.avif"
+
+export const DivYoutube = styled.div`
+    display: flex;
+    justify-content: center;
+    height: 666px;
+    width: 1000px;
+    margin: auto;
+
+    @media (min-width: 768px) and (max-width: 992px) {
+        height: 400px;
+        width: 600px;
+    }
+`
 
 const progMiroir = [
     {
@@ -88,6 +103,14 @@ export default function Miroir() {
                     content="Programme Miroir créé par l'Ensemble Syllepse"
                 />
             </Helmet>
+            <DivYoutube>
+                <ReactPlayer
+                    width="100%"
+                    height="100%"
+                    url="https://youtu.be/RL7P4vaCZ9k"
+                    controls="true"
+                />
+            </DivYoutube>
             <Programme
                 titre="Miroir"
                 annee="2023"

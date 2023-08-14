@@ -187,4 +187,13 @@ export const concerts = [
             "69400 VILLEFRANCHE-SUR-SAÔNE",
         ],
     },
+    {
+        programme: "Chants et poésies",
+        date: "2023-11-10T21:00:00.000",
+        lieu: [
+            "Maison de la Culture Le Corbusier",
+            "Rue de Saint-Just-Malmont",
+            "42700 FIRMINY",
+        ],
+    },
 ]
