@@ -191,8 +191,9 @@ export const concerts = [
         programme: "Chants et poésies",
         date: "2023-11-10T21:00:00.000",
         lieu: [
-            "Maison de la Culture Le Corbusier",
-            "Rue de Saint-Just-Malmont",
+            "Festivocal",
+            "Église Saint-Pierre - Le Corbusier",
+            "Rue des Noyers",
             "42700 FIRMINY",
         ],
     },
