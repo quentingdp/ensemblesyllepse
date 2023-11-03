@@ -7,6 +7,7 @@ import { Helmet } from "react-helmet"
 import Navigation from "../../components/Navigation"
 import PiedDePage from "../../components/PiedDePage"
 import photoOphelia from "../../images/photos/DSCF1169.avif"
+import photoOpheliaDefaut from "../../images/photos/DSCF1169.jpg"
 
 export const StyleOpheliaBesson = styled.main`
     padding: 15px;
@@ -17,7 +18,6 @@ export const StyleOpheliaBesson = styled.main`
     flex-direction: column;
     align-items: start;
     text-align: center;
-    background-image: url(${photoOphelia});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -34,10 +34,38 @@ export const StyleOpheliaBesson = styled.main`
         letter-spacing: 1em;
     }
 
+    .deux-colonnes {
+        margin: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        &-description {
+            width: 40%;
+
+            p {
+                margin-top: 5px;
+                margin-bottom: 20px;
+            }
+        }
+
+        &-visuel {
+            width: 55%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
     article {
+        margin: auto;
         margin-top: 10px;
         margin-bottom: 30px;
-        width: 45%;
+        width: 60%;
+        text-align: center;
     }
 
     h2 {
@@ -46,6 +74,24 @@ export const StyleOpheliaBesson = styled.main`
 
     .presentation-description {
         margin: 20px 0;
+    }
+    
+    @media (max-width: 768px) {
+        .deux-colonnes {
+            flex-direction: column;
+
+            &-description {
+                width: 100%;
+            }
+
+            &-visuel {
+                width: 100%;
+            }
+        }
+
+        article {
+            width: unset;
+        }
     }
 `
 export default function OpheliaBesson() {
@@ -64,42 +110,53 @@ export default function OpheliaBesson() {
                     <h1>Ophélia Besson</h1>
                     <p className="sous-titre">Direction artistique</p>
                 </div>
-                <article>
-                    <p className="presentation-description">
-                        Ophélia Besson, directrice artistique et cheffe de chœur
-                        de l'Ensemble Vocal Syllepse, est étudiante au CNSMD de
-                        Lyon en double Master dans la classe de Direction de
-                        Chœur de Lionel Sow et dans la classe de Pédagogie -
-                        Formation au Certificat d'Aptitude (CA).
-                    </p>
-                    <p className="presentation-description">
-                        Elle entre dès 2006 à la Maîtrise de l'Opéra de Lyon et
-                        au CRR de Lyon. Elle obtient un Diplôme d'Études
-                        Musicales de Violon, de Formation Musicale, ainsi qu'un
-                        Certificat d'Études Musicales de Piano et d'Écriture.
-                    </p>
-                    <p className="presentation-description">
-                        Depuis le début de ses études de direction de chœur,
-                        Ophélia a eu l'opportunité d'étudier auprès de Lionel
-                        Sow, Roland Hayrabedian, Nicole Corti, Régine
-                        Théodoresco, Geoffroy Jourdain, Christophe Grapperon,
-                        Robert Ingari, Leslie Peeters, Bernard Têtu… Elle a été
-                        chanteuse et cheffe assistante de Mikrokosmos, dirigé
-                        par Loïc Pierre.
-                    </p>
-                    <p className="presentation-description">
-                        Cheffe déterminée, solaire, enjouée et chaleureuse,
-                        cette déclaration d'Ophélia définit bien son action et
-                        son idéal :
-                    </p>
-                    <p className="presentation-description">
-                        « L'émotion, l'enthousiasme et la magie du spectacle
-                        m'animent depuis toujours. Je suis convaincue que la
-                        joie nous donne une force collective pour parvenir à une
-                        exigence musicale, artistique et humaine. Voici ma quête
-                        constante : allier exigence, plaisir, et partage! »
-                    </p>
-                </article>
+                <div className="deux-colonnes">
+                    <article className="deux-colonnes-description">
+                        <p className="presentation-description">
+                            Ophélia Besson, directrice artistique et cheffe de chœur
+                            de l'Ensemble Vocal Syllepse, est étudiante au CNSMD de
+                            Lyon en double Master dans la classe de Direction de
+                            Chœur de Lionel Sow et dans la classe de Pédagogie -
+                            Formation au Certificat d'Aptitude (CA).
+                        </p>
+                        <p className="presentation-description">
+                            Elle entre dès 2006 à la Maîtrise de l'Opéra de Lyon et
+                            au CRR de Lyon. Elle obtient un Diplôme d'Études
+                            Musicales de Violon, de Formation Musicale, ainsi qu'un
+                            Certificat d'Études Musicales de Piano et d'Écriture.
+                        </p>
+                        <p className="presentation-description">
+                            Depuis le début de ses études de direction de chœur,
+                            Ophélia a eu l'opportunité d'étudier auprès de Lionel
+                            Sow, Roland Hayrabedian, Nicole Corti, Régine
+                            Théodoresco, Geoffroy Jourdain, Christophe Grapperon,
+                            Robert Ingari, Leslie Peeters, Bernard Têtu… Elle a été
+                            chanteuse et cheffe assistante de Mikrokosmos, dirigé
+                            par Loïc Pierre.
+                        </p>
+                        <p className="presentation-description">
+                            Cheffe déterminée, solaire, enjouée et chaleureuse,
+                            cette déclaration d'Ophélia définit bien son action et
+                            son idéal :
+                        </p>
+                        <p className="presentation-description">
+                            « L'émotion, l'enthousiasme et la magie du spectacle
+                            m'animent depuis toujours. Je suis convaincue que la
+                            joie nous donne une force collective pour parvenir à une
+                            exigence musicale, artistique et humaine. Voici ma quête
+                            constante : allier exigence, plaisir, et partage! »
+                        </p>
+                    </article>
+                    <div className="deux-colonnes-visuel">
+                        <picture>
+                            <source srcSet={photoOphelia} />
+                            <img
+                                src={photoOpheliaDefaut}
+                                alt="Ophélia Besson"
+                            />
+                        </picture>
+                    </div>
+                </div>
                 <article>
                     <h2>« Syllepse est un ensemble vocal collaboratif »</h2>
                     <p className="presentation-description">
