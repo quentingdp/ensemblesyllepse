@@ -27,6 +27,7 @@ import logoEcoleDeMusiqueVenissieux from "../images/logo/logo-ecole-de-musique-v
 import logoPrintempsDesArts from "../images/logo/logo-printemps-des-arts.png"
 import logoSpedidam from "../images/logo/logo-spedidam.png"
 import logoVilleDeVenissieux from "../images/logo/logo-ville-de-venissieux.png"
+import logoMetropoleGrandLyon from "../images/logo/logo-metropole-grand-lyon.png"
 
 export const StyleCover = styled.div`
     height: 80vh;
@@ -153,6 +154,10 @@ export default function Accueil() {
                         <img
                             src={logoVilleDeVenissieux}
                             alt="Ville de Vénissieux"
+                        />
+                        <img
+                            src={logoMetropoleGrandLyon}
+                            alt="Métropole Grand Lyon"
                         />
                     </div>
                 </div>

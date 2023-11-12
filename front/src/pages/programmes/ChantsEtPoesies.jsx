@@ -98,7 +98,7 @@ export default function ChantsEtPoesies() {
             <Programme
                 titre="Chants et poésies"
                 annee="2022"
-                effectif="Programme pour 12 chanteurs et chef.fe de chœur"
+                effectif="Programme pour 12 chanteurs et cheffe de chœur"
                 introduction={[
                     "Syllepse s'est rendu à Lamure-sur-Azergues, village rural de 1000 habitants, en lien avec le Quartier Métisseur et le compositeur NANS DE JESUS pour créer son spectacle Chants et poésies. Son programme autour des poètes français (RENÉ CHAR, GUILLAUME APOLLINAIRE, PAUL ÉLUARD…) a été présenté au côté des œuvres de la plasticienne CÉLINE THOUÉ et d'artisans locaux.",
                     "Des ateliers de chant choral ont été proposés en libre accès aux habitants. L'objectif était double : monter un projet ambitieux, celui d'un répertoire vocal de qualité et tisser du lien artistique et social en milieu rural.",

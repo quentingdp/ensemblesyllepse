@@ -86,7 +86,7 @@ export default function Kaleidoscope() {
             <Programme
                 titre="Kaléidoscope"
                 annee="2022"
-                effectif="Programme pour 10 chanteurs et chef.fe de chœur"
+                effectif="Programme pour 10 chanteurs et cheffe de chœur"
                 introduction={[
                     "Concert original interprété par huit chanteurs sous la direction d'OPHÉLIA BESSON. Présenté exclusivement en anglais, il est pensé comme un patchwork original à destination d'un public international. Explorant tout le répertoire vocal a cappella de la musique de la renaissance à la musique contemporaine en passant par les époques classique et romantique, l'Ensemble Vocal Syllepse fait participer le public et l'invite à intéragir.",
                     "Présenté 12 fois en 2022 et d'ores et déjà programmé jusqu'en 2024 à la Chapelle de la Trinité de Lyon en partenariat avec Alice Production, ce programme rencontre un grand succès et séduit le public anglophone !",

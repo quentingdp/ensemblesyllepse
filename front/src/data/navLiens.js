@@ -4,10 +4,6 @@ Structure contenant les informations du menu de navigation : le label, le lien c
 
 export const navLiens = [
     {
-        label: "Accueil",
-        lien: "/",
-    },
-    {
         label: "À propos",
         sousLiens: [
             {

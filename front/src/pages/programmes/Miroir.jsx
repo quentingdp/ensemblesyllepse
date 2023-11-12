@@ -114,7 +114,7 @@ export default function Miroir() {
             <Programme
                 titre="Miroir"
                 annee="2023"
-                effectif="Programme pour 10 chanteurs et chef.fe de chœur"
+                effectif="Programme pour 10 chanteurs et cheffe de chœur"
                 introduction={[
                     "Sélectionné par la Cité de la Voix pour participer aux résidences estivales destinées aux jeunes ensembles professionnels, l'Ensemble Vocal Syllepse présentera en juillet 2023 un programme mêlant musique de la renaissance et musique contemporaine.",
                     "Musique de la Renaissance : 20’",
