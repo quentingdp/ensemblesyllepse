@@ -198,10 +198,41 @@ export const concerts = [
         ],
     },
     {
+        programme: "Miroir",
+        date: "2024-02-01T00:00:00.000",
+        lieu: [
+            "Collège Roger Poulnard",
+            "Concert scolaire",
+            "Rue de la Mairie",
+            "01380 BÂGÉ-DOMMARTIN",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2024-02-05T00:00:00.000",
+        lieu: [
+            "Temple du Change",
+            "Concert scolaire - Billetterie en fonction des places disponibles",
+            "Place du Change",
+            "69005 LYON",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2024-03-11T00:00:00.000",
+        lieu: [
+            "Collège du val de Saône",
+            "Concert scolaire",
+            "286 route de Francheleins",
+            "01090 MONTCEAUX",
+        ],
+    },
+    {
         programme: "Kaléidoscope",
         date: "2024-04-16T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -211,6 +242,7 @@ export const concerts = [
         date: "2024-04-26T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -220,6 +252,7 @@ export const concerts = [
         date: "2024-05-30T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -229,6 +262,7 @@ export const concerts = [
         date: "2024-07-13T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -238,6 +272,7 @@ export const concerts = [
         date: "2024-08-06T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -247,6 +282,7 @@ export const concerts = [
         date: "2024-08-16T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
@@ -256,13 +292,14 @@ export const concerts = [
         date: "2024-08-26T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-01-28T00:00:00.000",
+        date: "2024-01-28T16:00:00.000",
         lieu: [
             "Château de Vogüé",
             "2 impasse des marronniers",
@@ -271,7 +308,7 @@ export const concerts = [
     },
     {
         programme: "Miroir",
-        date: "2024-02-02T00:00:00.000",
+        date: "2024-02-02T18:30:00.000",
         lieu: [
             "Musée des Beaux-Arts",
             "Place des Terreaux",
@@ -280,7 +317,25 @@ export const concerts = [
     },
     {
         programme: "Miroir",
-        date: "2024-03-10T00:00:00.000",
+        date: "2024-02-02T19:45:00.000",
+        lieu: [
+            "Musée des Beaux-Arts",
+            "Place des Terreaux",
+            "69001 LYON",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2024-02-02T21:00:00.000",
+        lieu: [
+            "Musée des Beaux-Arts",
+            "Place des Terreaux",
+            "69001 LYON",
+        ],
+    },
+    {
+        programme: "Miroir",
+        date: "2024-03-10T18:30:00.000",
         lieu: [
             "Festival l'Haÿ en choeur",
             "L'HAŸ LES ROSES",
@@ -288,72 +343,80 @@ export const concerts = [
     },
     {
         programme: "Miroir",
-        date: "2024-05-20T19:00:00.000",
+        date: "2024-05-20T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-06-23T19:00:00.000",
+        date: "2024-06-23T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-07-03T19:00:00.000",
+        date: "2024-07-03T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-09-19T19:00:00.000",
+        date: "2024-09-19T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-09-29T19:00:00.000",
+        date: "2024-09-29T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-10-09T19:00:00.000",
+        date: "2024-10-09T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-10-19T19:00:00.000",
+        date: "2024-10-19T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],
     },
     {
         programme: "Miroir",
-        date: "2024-10-29T19:00:00.000",
+        date: "2024-10-29T20:15:00.000",
         lieu: [
             "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
             "31 rue de la Bourse",
             "69002 LYON",
         ],

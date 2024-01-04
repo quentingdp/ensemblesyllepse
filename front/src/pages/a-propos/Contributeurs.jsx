@@ -15,6 +15,7 @@ import photoQuentinGuillon from "../../images/photos/Quentin_Guillon_de_Prince.a
 import photoQuentinGuillonDefaut from "../../images/photos/Quentin_Guillon_de_Prince.jpg"
 import photoSarahBordes from "../../images/photos/Sarah_Bordes.avif"
 import photoSarahBordesDefaut from "../../images/photos/Sarah_Bordes.jpg"
+import photoDefaut from "../../images/logo/image_par_defaut.jpg"
 
 export const StyleContributeurs = styled.main`
     padding: 15px;
@@ -43,6 +44,17 @@ export default function Contributeurs() {
                     />
                 </Helmet>
                 <h1>Les contributeurs</h1>
+                <h2>Chef assistant</h2>
+                <Carte
+                    photo={photoDefaut}
+                    photoDefaut={photoDefaut}
+                    nom="Jean Fortunier-Cateland"
+                    biographie={[
+                        "Jean Fortunier-Cateland découvre le chœur lors de sa scolarité à la Maîtrise de la Loire où il étudie la technique vocale, le chant choral, l’accompagnement au piano, la composition et la direction de chœur. Parallèlement à des études littéraires en classe préparatoire puis à l’Ecole normale supérieure de la rue d'Ulm, il poursuit sa formation musicale au CRR de Boulogne-Billancourt puis au CNSMD de Lyon dans la classe de Christophe Grapperon.",
+                        "Il est le fondateur et chef de l’Ensemble vocal de l’ENS, composé d’une vingtaine de chanteur·euses, qui a pour ambition d’explorer la recherche-création appliquée au domaine choral.",
+                        "Il a eu l’opportunité de travailler avec des chef·fes tel·les que Mathieu Romano, Martina Batič, Marianne Guengard, Nils Schweckendiek ou Régine Théodoresco. Soucieux de toujours élargir sa pratique artistique, il s’engage régulièrement dans des projets interdisciplinaires aux côtés de comédien·nes, de metteur·euses en scène et de danseur·euses.",
+                    ]}
+                />
                 <h2>Création site internet</h2>
                 <Carte
                     photo={photoQuentinGuillon}
