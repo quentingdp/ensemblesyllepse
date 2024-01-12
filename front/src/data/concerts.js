@@ -335,7 +335,7 @@ export const concerts = [
     },
     {
         programme: "Miroir",
-        date: "2024-03-10T18:30:00.000",
+        date: "2024-03-10T18:00:00.000",
         lieu: [
             "Festival l'Haÿ en choeur",
             "L'HAŸ LES ROSES",
