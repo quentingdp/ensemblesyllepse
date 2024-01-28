@@ -28,6 +28,7 @@ import logoPrintempsDesArts from "../images/logo/logo-printemps-des-arts.png"
 import logoSpedidam from "../images/logo/logo-spedidam.png"
 import logoVilleDeVenissieux from "../images/logo/logo-ville-de-venissieux.png"
 import logoMetropoleGrandLyon from "../images/logo/logo-metropole-grand-lyon.png"
+import masterclassDirection2024Pdf from "../data/masterclass_direction_2024.pdf"
 
 export const StyleCover = styled.div`
     height: 80vh;
@@ -72,6 +73,14 @@ export const StyleAccueil = styled.main`
         }
     }
 
+    .texte-important {
+        font-size: 2em;
+    }
+
+    .lien {
+        text-decoration: underline;
+    }
+
     .gallerie-logos {
         display: flex;
         justify-content: space-evenly;
@@ -108,6 +117,9 @@ export default function Accueil() {
                     <p className="sous-titre">
                         "prendre ensemble, comprendre, embrasser"
                     </p>
+                </div>
+                <div className="presentation-texte texte-important">
+                    <p>L'ensemble Syllepse organise à nouveau sa masterclass de direction de coeur en 2024, du 20 au 23 février. Vous pouvez télécharger ici <a className="lien" href={masterclassDirection2024Pdf}>le programme complet et le formulaire de participation</a></p>
                 </div>
                 {deuxiemeProchainConcert(concerts).hasOwnProperty(
                     "programme"
