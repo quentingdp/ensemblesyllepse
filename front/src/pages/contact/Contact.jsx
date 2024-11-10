@@ -55,9 +55,19 @@ export default function Contact() {
                     ou en nous écrivant sur les réseaux sociaux.
                 </p>
                 <p>
-                    <a href="mailto:contact@ensemblesyllepse.com">
-                        contact@ensemblesyllepse.com
-                    </a>
+                    Contact : <a href="mailto:contact@ensemblesyllepse.com">contact@ensemblesyllepse.com</a>
+                </p>
+                <p>
+                    Administration : <a href="mailto:administration@ensemblesyllepse.com">administration@ensemblesyllepse.com</a>
+                </p>
+                <p>
+                    Diffusion : <a href="mailto:marie.orset@ensemblesyllepse.com">marie.orset@ensemblesyllepse.com</a>
+                </p>
+                <p>
+                    Direction artistique : <a href="mailto:ophelia.besson@ensemblesyllepse.com">ophelia.besson@ensemblesyllepse.com</a>
+                </p>
+                <p>
+                    Trésorerie : <a href="mailto:finance@ensemblesyllepse.com">finance@ensemblesyllepse.com</a>
                 </p>
                 <ul className="contact-syllepse">
                     <li>
@@ -73,6 +83,6 @@ export default function Contact() {
                 </ul>
             </StyleContact>
             <PiedDePage />
-        </React.Fragment>
+        </React.Fragment >
     )
 }

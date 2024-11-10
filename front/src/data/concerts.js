@@ -421,4 +421,154 @@ export const concerts = [
             "69002 LYON",
         ],
     },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-04-14T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-04-24T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-05-18T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-05-28T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-06-07T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-06-17T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-06-27T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-07-21T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-07-31T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-08-10T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-08-20T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-09-13T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-09-23T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-10-03T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
+    {
+        programme: "Kaléidoscope",
+        date: "2025-10-13T20:00:00.000",
+        lieu: [
+            "Chapelle de la Trinité",
+            "Concert privé - sur réservation",
+            "31 rue de la Bourse",
+            "69002 LYON",
+        ],
+    },
 ]
